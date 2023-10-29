@@ -23,3 +23,6 @@ h2{
     font-size:2rem;
     color: var(--headerColor, black);
 }
+body{
+    background-color: var(--backgroundColor);
+}
