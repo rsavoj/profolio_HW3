@@ -21,6 +21,8 @@ h1.mainHeader{
     color: black;
     height: 100%;
     width: 100%;
+}
+#pictures{
     display: flex;
 }
 h2{
