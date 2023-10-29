@@ -1,3 +1,9 @@
+root:{
+    --paragraphColor: #818589;
+    --backgroundColor: #B2BEB5;
+    --headerColor: #36454F;
+}
+
 h1{
-    color: green
+    color: var(--headerColor)
 }
