@@ -2,9 +2,10 @@
     --paragraphColor: #818589;
     --backgroundColor: #B2BEB5;
     --headerColor: #36454F;
+    --h1Size: 5rem;
 }
 
 h1{
     font-size: 5rem;
-    color: var(--headerColor, black)
+    color: var(--headerColor, black);
 }
