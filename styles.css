@@ -16,12 +16,7 @@ h1.mainHeader{
     color: var(--headerColor, black);
     font-size:4rem;
 }
-#headerID{
-    color: var(--testElement);
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
+
 #aboutMe{
     color: var(--testElement);
     height: 100%;
