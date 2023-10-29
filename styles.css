@@ -4,6 +4,10 @@
     --headerColor: #36454F;
     --h1Size: 5rem;
 }
+html {
+    font-size: 10px;
+   
+}
 
 h1{
     font-size: 5rem;
