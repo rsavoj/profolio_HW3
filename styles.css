@@ -2,18 +2,18 @@
     --paragraphColor: #818589;
     --backgroundColor: #B2BEB5;
     --headerColor: #36454F;
-    --h1Size: 5rem;
+    --h1Size:5rem;
 }
 html {
-    font-size: 10px;
+    font-size:10px;
    
 }
 
 h1{
-    font-size: 20px;
+    font-size:20px;
     color: var(--headerColor, black);
 }
 h2{
-    font-size: 6rem;
+    font-size:6rem;
     color: var(--headerColor, black);
 }
