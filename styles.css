@@ -9,7 +9,7 @@ html {
    
 }
 
-h1{
+h1.mainHeader{
     font-size:20px;
     color: var(--headerColor, black);
 }
