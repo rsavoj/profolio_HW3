@@ -16,6 +16,9 @@ h1.mainHeader{
     color: var(--headerColor, black);
     font-size:4rem;
 }
+header{
+    color: var(--backgroundColor);
+}
 h2{
     font-size:2rem;
     color: var(--headerColor, black);
