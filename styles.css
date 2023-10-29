@@ -19,7 +19,8 @@ h1.mainHeader{
 #headerID{
     color: var(--testElement);
     height: 100%;
-    width: 100%
+    width: 100%;
+    display: flex;
 }
 h2{
     font-size:2rem;
