@@ -16,7 +16,7 @@ h1.mainHeader{
     color: var(--headerColor, black);
     font-size:4rem;
 }
-section{
+#headerID{
     color: var(--backgroundColor);
 }
 h2{
