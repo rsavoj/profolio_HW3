@@ -7,8 +7,7 @@
 }
 html {
     width: 100%;
-
-   
+  
 }
 
 h1.mainHeader{
@@ -18,7 +17,8 @@ h1.mainHeader{
 }
 
 #aboutMe{
-    color: var(--testElement);
+    background-color: var(--backgroundColor);
+    color: black;
     height: 100%;
     width: 100%;
     display: flex;
