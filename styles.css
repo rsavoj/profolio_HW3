@@ -23,6 +23,9 @@ h2{
     font-size:2rem;
     color: var(--headerColor, black);
 }
+p{
+    color: var(--paragraphColor, black);
+}
 body{
     background-color: var(--backgroundColor);
 }
