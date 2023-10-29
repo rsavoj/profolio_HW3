@@ -18,6 +18,7 @@ h1.mainHeader{
 
 #aboutMe{
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
     background-color: var(--backgroundColor);
     color: black;
     height: 100%;
