@@ -17,7 +17,7 @@ h1.mainHeader{
     font-size:4rem;
 }
 #headerID{
-    color: var(--backgroundColor);
+    color: var(--testElement);
 }
 h2{
     font-size:2rem;
@@ -25,7 +25,4 @@ h2{
 }
 p{
     color: var(--paragraphColor, black);
-}
-body{
-    background-color: var(--backgroundColor);
 }
