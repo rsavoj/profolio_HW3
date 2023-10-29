@@ -10,8 +10,9 @@ html {
 }
 
 h1.mainHeader{
-    font-size:20px;
+    
     color: var(--headerColor, black);
+    font-size:20px;
 }
 h2{
     font-size:6rem;
