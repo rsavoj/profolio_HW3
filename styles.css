@@ -21,12 +21,13 @@ h1.mainHeader{
     color: black;
     height: 100%;
     width: 100%;
+    font-size:2rem;
 }
 #pictures{
     display: flex;
 }
 h2{
-    font-size:2rem;
+    font-size:3rem;
     color: var(--headerColor, black);
 }
 p{
