@@ -17,6 +17,7 @@ h1.mainHeader{
 }
 
 #aboutMe{
+    
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     background-color: var(--backgroundColor);
@@ -24,10 +25,10 @@ h1.mainHeader{
     height: 100%;
     width: 100%;
     font-size:2rem;
-    display: flex;
+    
 }
 #pictures{
-    display: flex;
+    display: block;
 }
 h2{
     font-size:3rem;
