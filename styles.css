@@ -14,7 +14,7 @@ html {
     background-color: var(--testElement);
     color: var(--headerColor, black);
     font-size:4rem;
-    height: 5rem;
+    height: 7rem;
     padding-top: 0;
 }
 
