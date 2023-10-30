@@ -1,8 +1,8 @@
 :root {
     --paragraphColor: #818589;
     --backgroundColorHeader: #B2BEB5;
-    --backgroundColorBody: #DEDEDE
-    --headerColor: #36454F;
+    --backgroundColorBody: #DEDEDE;
+    --headerColorFont: #36454F;
     --testElement: #FF0000;
     --h1Size:5rem;
 }
@@ -17,7 +17,7 @@ header {
 }
 .mainHeader{
    
-    color: var(--headerColor, black);
+    color: var(--headerColorFont, black);
     font-size:4rem;
   
 
@@ -39,7 +39,7 @@ header {
 }
 h2{
     font-size:3rem;
-    color: var(--headerColor, black);
+    color: var(--headerColorFont, black);
 }
 p{
     color: var( black);
