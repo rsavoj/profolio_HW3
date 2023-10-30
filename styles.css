@@ -9,7 +9,7 @@ html {
     width: 100%;
   
 }
-.Header {
+header {
     background-color: var(--testElement);
 }
 .mainHeader{
