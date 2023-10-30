@@ -10,8 +10,8 @@ html {
   
 }
 
-h1.mainHeader{
-    
+.mainHeader{
+    background-color: var(--testElement);
     color: var(--headerColor, black);
     font-size:4rem;
 }
