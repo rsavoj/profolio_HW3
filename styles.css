@@ -1,6 +1,6 @@
 :root {
     --paragraphColor: #818589;
-    --backgroundColor: #B2BEB5;
+    --backgroundColorHeader: #B2BEB5;
     --headerColor: #36454F;
     --testElement: #FF0000;
     --h1Size:5rem;
@@ -12,7 +12,7 @@ html {
 header {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--testElement);
+    background-color: var(--backgroundColorHeader);
 }
 .mainHeader{
    
