@@ -9,9 +9,11 @@ html {
     width: 100%;
   
 }
-
-.mainHeader{
+.Header {
     background-color: var(--testElement);
+}
+.mainHeader{
+   
     color: var(--headerColor, black);
     font-size:4rem;
     height: 7rem;
