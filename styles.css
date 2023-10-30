@@ -10,14 +10,15 @@ html {
   
 }
 header {
+    padding: 0;
     background-color: var(--testElement);
 }
 .mainHeader{
    
     color: var(--headerColor, black);
     font-size:4rem;
-    height: 7rem;
-    padding-top: 0;
+  
+
 }
 
 #aboutMe{
