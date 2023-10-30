@@ -1,6 +1,7 @@
 :root {
     --paragraphColor: #818589;
     --backgroundColorHeader: #B2BEB5;
+    --backgroundColorBody: #DEDEDE
     --headerColor: #36454F;
     --testElement: #FF0000;
     --h1Size:5rem;
@@ -26,7 +27,7 @@ header {
     
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-    background-color: var(--backgroundColor);
+    background-color: var(--backgroundColorBody);
     color: black;
     height: 100%;
     width: 100%;
