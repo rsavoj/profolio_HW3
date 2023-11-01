@@ -15,12 +15,9 @@ header {
     padding-bottom: 1rem;
     background-color: var(--backgroundColorHeader);
 }
-.mainHeader{
-   
+.mainHeader{ 
     color: var(--headerColorFont, black);
     font-size:4rem;
-  
-
 }
 
 #aboutMe{
