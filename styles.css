@@ -1,5 +1,5 @@
 :root {
-    --paragraphColor: #818589;
+    --detailsColor: #818589;
     --backgroundColorHeader: #B2BEB5;
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
@@ -61,6 +61,11 @@ section{
 }
 #aboutme>h2{
     margin:0rem;   
+}
+details{
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color:var(--detailsColor);
 }
 details summary > *{
     display: inline;
