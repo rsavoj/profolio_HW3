@@ -1,6 +1,7 @@
 :root {
     --detailsColor: #b2bdc9;
     --backgroundColorHeader: #B2BEB5;
+    --backgroundColorHeaderDark: #91a195;
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
     --testElement: #FF0000;
@@ -79,6 +80,14 @@ body{
 }
 #contact{
     padding-bottom: 0.5rem;
+}
+.button{
+    font-family: baskerville;
+    background-color: var(--backgroundColorHeader);
+}
+.button:hover{
+    font-family: baskerville;
+    background-color: var(--backgroundColorHeaderDark);
 }
 footer{
     background-color: var(--backgroundColorHeader);
