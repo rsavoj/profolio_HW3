@@ -28,7 +28,7 @@ h1.mainHeader{
     padding-bottom:5px; 
     padding-left:5px;
 }
-picture{
+picture {
     object-fit: cover;
     object-position: center;
 }
