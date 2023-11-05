@@ -18,8 +18,8 @@ h1.mainHeader{
     color: var(--headerColorFont, black);
     border-style: solid;
     border-width: 3px;
-    
-  
+    padding-top: 5px;
+    padding-bottom: 5px; 
 }
 
 #aboutMe{
@@ -41,8 +41,7 @@ h2{
     color: var(--headerColorFont, black);
 }
 p{
-    color: var( black);
-    padding-top: 5px;
-    padding-bottom: 5px !important;
+    color: var(black);
+    
    
 }
