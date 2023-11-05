@@ -39,7 +39,7 @@ img {
     background-color:var(--headerColorFont, black);
 }
 #navigation a{
-    color: var(--color0);
+    color: white;
     font-size: 1rem;
     text-decoration: none;
 }
