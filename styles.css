@@ -29,6 +29,7 @@ h1.mainHeader{
 
 #aboutMe{
     margin:0;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: var(--backgroundColorBody);
     color: black;
@@ -36,6 +37,7 @@ h1.mainHeader{
     
 }
 h2{
+    padding-top: 0.5rem;
     font-size:3rem;
     color: var(--headerColorFont, black);
 }
