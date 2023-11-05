@@ -86,9 +86,14 @@ button{
     background-color: var(--backgroundColorHeader);
 }
 button:hover{
-    font-family: baskerville;
     background-color: var(--backgroundColorHeaderDark);
 }
+input{
+    font-family: baskerville;
+}
+input:focus{
+    background-color:(var(--detailsColor)) ;
+} 
 footer{
     background-color: var(--backgroundColorHeader);
     color:var(--headerColorFont, black);
