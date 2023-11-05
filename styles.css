@@ -97,7 +97,7 @@ button{
 
 }
 #introanimation{
-    color:white;
+    color:var(--headerColorFont);
     animation-name: buttonfloat;
     position: relative;
     animation-duration: 20s;
