@@ -44,7 +44,7 @@ section #navigation a{
     font-size: 1rem;
     
 }
-section #aboutme h2{
+#aboutme>h2{
     margin:0rem;
     
 }
