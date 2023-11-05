@@ -92,7 +92,7 @@ input{
     font-family: baskerville;
 }
 input:focus{
-    background-color:(#b2bdc9) ;
+    background-color:blueviolet ;
 } 
 footer{
     background-color: var(--backgroundColorHeader);
