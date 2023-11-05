@@ -6,7 +6,7 @@
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
     --color0 : color(display-p3 1 0 0);
-    --color1 :color-mix( magenta, maroon);
+    --color1 :color-mix(in srgb magenta, maroon);
     ;
 }
 html {
