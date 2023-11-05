@@ -32,12 +32,8 @@ h1.mainHeader{
     padding-bottom: 0.5rem;
     background-color: var(--backgroundColorBody);
     color: black;
+    font-size: 1rem;
     
-    font-size: 2rem;
-    
-}
-#pictures{
-    color: black;
 }
 h2{
     font-size:3rem;
