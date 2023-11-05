@@ -60,8 +60,10 @@ section{
     
 }
 #aboutme>h2{
-    margin:0rem;
-    
+    margin:0rem;   
+}
+details summary{
+    display: inline;
 }
 h2{
     margin:0.1rem;
