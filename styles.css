@@ -95,6 +95,9 @@ input{
 input:focus{
     background-color:var(--formActiveColor) ;
 } 
+textarea:focus{
+    background-color:var(--formActiveColor) ;
+} 
 footer{
     background-color: var(--backgroundColorHeader);
     color:var(--headerColorFont, black);
