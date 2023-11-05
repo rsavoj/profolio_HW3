@@ -89,7 +89,7 @@ button{
 button:hover{
     background-color: var(--backgroundColorHeaderDark);
 }
-input{
+input, textarea{
     font-family: baskerville;
 }
 input:focus{
