@@ -88,6 +88,7 @@ body{
 }
 button{
     border-radius: 3rem;
+    color:var(--headerColorFont)
     font-size: 1rem;
     font-family: baskerville;
     background-color: var(--backgroundColorHeader,olive);
