@@ -5,7 +5,7 @@
     --backgroundColorHeaderDark: #91a195;
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
-    --color0 : color(display-p3 1 0 0);
+    --color0 : color(display-p3 .93 .163 .869);
     --color1:color-mix(in lch, magenta, maroon);
     ;
 }
@@ -106,8 +106,8 @@ button{
     animation-delay: 0.5s;
 }
 @keyframes buttonfloat{
-    0%{left:3vw; color:var(--color1);}
-    25%{ left:25vw; color:grey;}
+    0%{left:3vw; color:var(--color1), grey;}
+    25%{ left:25vw; color:var(--color0),grey;}
     50%{left:50vw; color:lightgrey;}
     100%{left:80vw;color:var(--headerColorFont);}
 }
@@ -142,6 +142,6 @@ footer{
 }
 #contactinfo{
     margin-bottom: 3rem;
-    color:var(--color1, red);
+    color:var(white, red);
     background-color:var(--headerColorFont, black);
 }
