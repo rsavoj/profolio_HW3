@@ -104,10 +104,10 @@ button{
     animation-delay: -10s;
 }
 @keyframes buttonfloat{
-    0%{color:black; left:0vw; top:0px;}
-    25%{ left:25vw; top:0px;}
-    50%{left:50vw; top:0px;}
-    100%{left:80vw; top:0px;}
+    0%{color:black;}
+    25%{ left:25vw; }
+    50%{left:50vw;}
+    100%{left:80vw;}
 }
 button:hover{
     background-color: var(--backgroundColorHeaderDark,darkgreen);
