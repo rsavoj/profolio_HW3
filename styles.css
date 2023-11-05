@@ -33,6 +33,12 @@ h1.mainHeader{
 #navigation a{
     color: white;
     font-size: 1rem;
+    text-decoration: none;
+}
+#navigation a:hover{
+    color: grey;
+    font-size: 1rem;
+    text-decoration: underline;
 }
 
 #aboutme{
