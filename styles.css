@@ -28,14 +28,11 @@ h1.mainHeader{
 }
 
 #aboutMe{
-    
-    padding-top: 1rem;
     padding-bottom: 0.5rem;
     background-color: var(--backgroundColorBody);
     color: black;
-    height: 100%;
-    width: 100%;
-    font-size:2rem;
+    
+    font-size: 2rem;
     
 }
 #pictures{
