@@ -106,8 +106,13 @@ button{
     animation-delay: 0.5s;
 }
 @keyframes buttonfloat{
-    0%{left:3vw; color:var(--color1), grey;}
-    25%{ left:25vw; color:var(--color0),grey;}
+    0%{
+        left:3vw;
+        color:var(--color1), grey;}
+    25%{ 
+        left:25vw;
+        color:var(--color0),grey;
+    }
     50%{left:50vw; color:lightgrey;}
     100%{left:80vw;color:var(--headerColorFont);}
 }
