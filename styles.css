@@ -88,7 +88,7 @@ body{
 }
 button{
     border-radius: 3rem;
-    color:var(--headerColorFont)
+    color:var(--headerColorFont);
     font-size: 1rem;
     font-family: baskerville;
     background-color: var(--backgroundColorHeader,olive);
@@ -101,7 +101,7 @@ button{
     animation-name: buttonfloat;
     position: relative;
     animation-duration: 20s;
-    animation-delay: -4s;
+    animation-delay: -10s;
 }
 @keyframes buttonfloat{
     0%   {color:black; left:0vw; top:0px;}
