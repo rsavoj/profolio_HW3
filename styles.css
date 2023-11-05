@@ -62,7 +62,7 @@ section{
 #aboutme>h2{
     margin:0rem;   
 }
-details summary{
+details summary > *{
     display: inline;
 }
 h2{
