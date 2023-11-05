@@ -16,10 +16,10 @@ h1.mainHeader{
     background-color: var(--backgroundColorHeader);
     margin:0;
     color: var(--headerColorFont, black);
-    padding-top: 2 rem;
-    padding-bottom: 2 rem !important;
-    border: 0.2 rem;
-   /* font-size:4rem; */
+    padding-top: 5 px;
+    padding-bottom: 5 px !important;
+    border: 1 px;
+  
 }
 
 #aboutMe{
