@@ -101,13 +101,13 @@ button{
     animation-name: buttonfloat;
     position: relative;
     animation-duration: 20s;
-    animation-delay: -10s;
+    animation-delay: 0.5s;
 }
 @keyframes buttonfloat{
-    0%{color:black;}
-    25%{ left:25vw; }
-    50%{left:50vw;}
-    100%{left:80vw;}
+    0%{left:3vw; color:black;}
+    25%{ left:25vw; color:grey;}
+    50%{left:50vw; color:lightgrey;}
+    100%{left:80vw;color:var(--headerColorFont);}
 }
 button:hover{
     background-color: var(--backgroundColorHeaderDark,darkgreen);
