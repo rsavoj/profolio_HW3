@@ -28,9 +28,9 @@ h1.mainHeader{
 }
 #navigation{
     
-    background-color: black;
+    background-color:var(--headerColorFont);
 }
-section #navigation a{
+#navigation a{
     color: white;
     font-size: 2rem;
 }
