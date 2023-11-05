@@ -81,11 +81,11 @@ body{
 #contact{
     padding-bottom: 0.5rem;
 }
-.button{
+button{
     font-family: baskerville;
     background-color: var(--backgroundColorHeader);
 }
-.button:hover{
+button:hover{
     font-family: baskerville;
     background-color: var(--backgroundColorHeaderDark);
 }
