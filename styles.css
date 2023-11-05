@@ -99,7 +99,7 @@ button{
     color:var(--headerColorFont);
     animation-name: buttonfloat;
     position: relative;
-    animation-duration: 20s;
+    animation-duration: 4s;
     animation-delay: 0.5s;
 }
 @keyframes buttonfloat{
