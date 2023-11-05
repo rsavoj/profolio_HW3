@@ -18,8 +18,8 @@ html {
 }
 h1.mainHeader{ 
     font-size:4rem;
-    font-family:"HeaderFont";
-    background-color:var(--backgroundColorHeader);
+    font-family:"HeaderFont", Helvetica;
+    background-color:var(--backgroundColorHeader, olive);
     margin:0;
     color:var(--headerColorFont, black);
     border-style:solid;
@@ -30,7 +30,7 @@ h1.mainHeader{
 }
 #navigation{
     
-    background-color:var(--headerColorFont);
+    background-color:var(--headerColorFont, black);
 }
 #navigation a{
     color: white;
@@ -64,7 +64,7 @@ section{
 details{
     margin: 1rem;
     padding: 0.5rem;
-    background-color:var(--detailsColor);
+    background-color:var(--detailsColor, lightblue);
 }
 details summary > *{
     display: inline;
@@ -86,10 +86,10 @@ button{
     border-radius: 3rem;
     font-size: 1rem;
     font-family: baskerville;
-    background-color: var(--backgroundColorHeader);
+    background-color: var(--backgroundColorHeader,olive);
 }
 button:hover{
-    background-color: var(--backgroundColorHeaderDark);
+    background-color: var(--backgroundColorHeaderDark,darkgreen);
 }
 label{
     display: inline-block;
@@ -103,13 +103,13 @@ input, textarea{
     margin-bottom: 0.5rem;
 }
 input:focus{
-    background-color:var(--formActiveColor) ;
+    background-color:var(--formActiveColor,  lightblue) ;
 } 
 textarea:focus{
-    background-color:var(--formActiveColor) ;
+    background-color:var(--formActiveColor, lightblue ) ;
 } 
 footer{
-    background-color:var(--backgroundColorHeader);
+    background-color:var(--backgroundColorHeader,olive);
     color:var(--headerColorFont, black);
     border-style:solid;
     border-width:3px;
