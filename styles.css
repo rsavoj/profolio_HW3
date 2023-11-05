@@ -10,13 +10,10 @@ html {
     width: 100%;
   
 }
-header {
 
-    
+h1.mainHeader{ 
     font-size: 4rem;
     background-color: var(--backgroundColorHeader);
-}
-.mainHeader{ 
     margin:0;
     color: var(--headerColorFont, black);
     padding-top: 2 rem;
