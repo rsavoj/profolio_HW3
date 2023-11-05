@@ -28,6 +28,10 @@ h1.mainHeader{
     padding-bottom:5px; 
     padding-left:5px;
 }
+picture{
+    object-fit: cover;
+    object-position: center;
+}
 #navigation{
     
     background-color:var(--headerColorFont, black);
@@ -97,7 +101,7 @@ label{
 }
 input, textarea{
     font-family: baskerville;
-    width:100vw;
+    width:80vw;
     margin-right:1rem;
     margin-top:0.1rem;
     margin-bottom: 0.5rem;
