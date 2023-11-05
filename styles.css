@@ -5,22 +5,26 @@
     --headerColorFont: #36454F;
     --testElement: #FF0000;
     --h1Size:5rem;
+   
 }
 html {
     width: 100%;
   
 }
+@font-face {font-family: "Mufferaw";  
+    src: url(MUFFERAW.ttf);}
 
 h1.mainHeader{ 
-    font-size: 4rem;
-    background-color: var(--backgroundColorHeader);
+    font-size:4rem;
+    font-family:"Mufferaw";
+    background-color:var(--backgroundColorHeader);
     margin:0;
-    color: var(--headerColorFont, black);
-    border-style: solid;
-    border-width: 3px;
-    padding-top: 5px;
-    padding-bottom: 5px; 
-    padding-left: 5px;
+    color:var(--headerColorFont, black);
+    border-style:solid;
+    border-width:3px;
+    padding-top:5px;
+    padding-bottom:5px; 
+    padding-left:5px;
 }
 
 #aboutMe{
