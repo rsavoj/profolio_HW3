@@ -142,6 +142,6 @@ footer{
 }
 #contactinfo{
     margin-bottom: 3rem;
-    color:white;
+    color:var(--color1, red);
     background-color:var(--headerColorFont, black);
 }
