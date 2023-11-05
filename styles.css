@@ -14,12 +14,13 @@ header {
 
     padding-top: 2 rem;
     padding-bottom: 2 rem !important;
+    font-size:4rem;
     border: 0.2 rem;
     background-color: var(--backgroundColorHeader);
 }
 .mainHeader{ 
     color: var(--headerColorFont, black);
-    font-size:4rem;
+   /* font-size:4rem; */
 }
 
 #aboutMe{
