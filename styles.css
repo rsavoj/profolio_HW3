@@ -19,6 +19,7 @@ header {
     background-color: var(--backgroundColorHeader);
 }
 .mainHeader{ 
+    margin:0;
     color: var(--headerColorFont, black);
    /* font-size:4rem; */
 }
