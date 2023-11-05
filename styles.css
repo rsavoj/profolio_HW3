@@ -91,7 +91,7 @@ button{
     font-size: 1rem;
     font-family: baskerville;
     background-color: var(--backgroundColorHeader,olive);
-    /*animation-name: buttonfloat; */
+    
     
 
 }
@@ -104,7 +104,9 @@ button{
 }
 @keyframes buttonfloat{
     0%   {left:0px; top:0px;}
-    100%  {left:100px; top:0px;}
+    25% {left:25vw; top:0px;}
+    50% {left:50vw; top:0px;}
+    100%  {left:100vw; top:0px;}
 }
 button:hover{
     background-color: var(--backgroundColorHeaderDark,darkgreen);
