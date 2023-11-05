@@ -108,10 +108,10 @@ button{
 @keyframes buttonfloat{
     0%{
         left:3vw;
-        color:var(--color1), grey;}
+        color:var(--color1);}
     25%{ 
         left:25vw;
-        color:var(--color0),grey;
+        color:var(--color0);
     }
     50%{left:50vw; color:lightgrey;}
     100%{left:80vw;color:var(--headerColorFont);}
