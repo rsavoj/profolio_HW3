@@ -5,6 +5,7 @@
     --backgroundColorHeaderDark: #91a195;
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
+    --color0 : color(display-p3 1 0 0);
     --color1 :color-mix(in wide-gamut, magenta, maroon);
     ;
 }
@@ -38,7 +39,7 @@ img {
     background-color:var(--headerColorFont, black);
 }
 #navigation a{
-    color: var(--color1);
+    color: var(--color0);
     font-size: 1rem;
     text-decoration: none;
 }
