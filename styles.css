@@ -28,6 +28,7 @@ h1.mainHeader{
 }
 
 #aboutMe{
+    margin:0;
     padding-bottom: 0.5rem;
     background-color: var(--backgroundColorBody);
     color: black;
