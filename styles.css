@@ -107,14 +107,14 @@ button{
 }
 @keyframes buttonfloat{
     0%{
-        left:3vw;
+        left:3dvw;
         color:var(--color1);}
     25%{ 
-        left:25vw;
+        left:25dvw;
         color:var(--color0);
     }
-    50%{left:50vw; color:lightgrey;}
-    100%{left:80vw;color:var(--headerColorFont);}
+    50%{left:50dvw; color:lightgrey;}
+    100%{left:80dvw;color:var(--headerColorFont);}
 }
 button:hover{
     background-color: var(--backgroundColorHeaderDark,darkgreen);
