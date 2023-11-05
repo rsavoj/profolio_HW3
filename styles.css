@@ -27,6 +27,7 @@ h1.mainHeader{
     padding-left:5px;
 }
 section #navigation{
+    
     background-color: black;
 }
 section #navigation a{
@@ -38,9 +39,13 @@ section #aboutme{
     margin:0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: var(--backgroundColorBody);
+    background-color:var(--backgroundColorBody);
     color: black;
     font-size: 1rem;
+    
+}
+section #aboutme h2{
+    margin:0rem;
     
 }
 h2{
