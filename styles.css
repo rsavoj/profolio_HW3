@@ -91,6 +91,7 @@ button:hover{
 }
 input, textarea{
     font-family: baskerville;
+    width:100%;
 }
 input:focus{
     background-color:var(--formActiveColor) ;
