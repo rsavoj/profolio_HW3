@@ -16,6 +16,7 @@ h1.mainHeader{
     background-color: var(--backgroundColorHeader);
     margin:0;
     color: var(--headerColorFont, black);
+    border-width: 1 px;
     
   
 }
@@ -42,5 +43,5 @@ p{
     color: var( black);
     padding-top: 5 px;
     padding-bottom: 5 px !important;
-    border: 1 px;
+   
 }
