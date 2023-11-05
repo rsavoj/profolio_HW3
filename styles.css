@@ -11,12 +11,12 @@ html {
     width: 100%;
   
 }
-@font-face {font-family: "Mufferaw";  
-    src: url(MUFFERAW.ttf);}
+@font-face {font-family: "HeaderFont";  
+    src: url(CLARENDON.woff);}
 
 h1.mainHeader{ 
     font-size:4rem;
-    font-family:"Mufferaw";
+    font-family:"HeaderFont";
     background-color:var(--backgroundColorHeader);
     margin:0;
     color:var(--headerColorFont, black);
