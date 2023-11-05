@@ -4,12 +4,9 @@
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
     --testElement: #FF0000;
-    --h1Size:5rem;
-   
 }
 html {
-    width: 100%;
-  
+    width: 100%; 
 }
 @font-face {font-family: "HeaderFont";  
     src: url(CLARENDON.woff);}
@@ -79,6 +76,9 @@ h2{
 body{
     color: var(black);
     font-family: baskerville;
+}
+#contact{
+    padding-bottom: 0.5rem;
 }
 footer{
     background-color: var(--backgroundColorHeader);
