@@ -103,7 +103,7 @@ button{
 }
 @keyframes buttonfloat{
     0%   {left:0px; top:0px;}
-    100%  {left:80vw; top:0px;}
+    100%  {left:10px; top:0px;}
 }
 button:hover{
     background-color: var(--backgroundColorHeaderDark,darkgreen);
