@@ -1,5 +1,6 @@
 :root {
     --detailsColor: #b2bdc9;
+    --formActiveColor: #a8caef;
     --backgroundColorHeader: #B2BEB5;
     --backgroundColorHeaderDark: #91a195;
     --backgroundColorBody: #DEDEDE;
@@ -92,7 +93,7 @@ input{
     font-family: baskerville;
 }
 input:focus{
-    background-color:blueviolet ;
+    background-color:var(--formActiveColor) ;
 } 
 footer{
     background-color: var(--backgroundColorHeader);
