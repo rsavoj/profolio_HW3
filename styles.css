@@ -6,7 +6,7 @@
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
     --color0 : color(display-p3 1 0 0);
-    --color1 :color-mix(in wide-gamut, magenta, maroon);
+    --color1 :color-mix( magenta, maroon);
     ;
 }
 html {
@@ -106,7 +106,7 @@ button{
     animation-delay: 0.5s;
 }
 @keyframes buttonfloat{
-    0%{left:3vw; color:black;}
+    0%{left:3vw; color:var(--color1);}
     25%{ left:25vw; color:grey;}
     50%{left:50vw; color:lightgrey;}
     100%{left:80vw;color:var(--headerColorFont);}
