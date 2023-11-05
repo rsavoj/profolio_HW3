@@ -44,6 +44,8 @@ section{
     color:var(--headerColorFont, black);
     border-style:solid;
     border-width:3px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color:var(--backgroundColorBody,olive);
 }
 #aboutme{
