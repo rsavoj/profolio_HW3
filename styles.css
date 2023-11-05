@@ -110,6 +110,7 @@ button{
 }
 button:hover{
     background-color: var(--backgroundColorHeaderDark,darkgreen);
+    transform: scale(2,2)
 }
 label{
     display: inline-block;
