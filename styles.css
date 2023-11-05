@@ -69,10 +69,13 @@ h2{
     font-size:3rem;
     color: var(--headerColorFont, black);
 }
-p{
+body{
     color: var(black);
     font-family: baskerville;
 }
 footer{
     background-color: var(--backgroundColorHeader);
+    color:var(--headerColorFont, black);
+    border-style:solid;
+    border-width:3px;
 }
