@@ -94,6 +94,10 @@ button{
     font-size: 1rem;
     font-family: baskerville;
     background-color: var(--backgroundColorHeader,olive);
+    :hover{
+        background-color: var(--backgroundColorHeaderDark,darkgreen);
+        transform: scale(1.2,1.2)
+    }
 }
 #introanimation{
     color:var(--headerColorFont);
@@ -105,7 +109,7 @@ button{
 @keyframes buttonfloat{
     0%{
         left:3dvw;
-        color: blue;
+        color:blue;
         color:var(--color1);}
     25%{ 
         left:25dvw;
@@ -114,10 +118,7 @@ button{
     50%{left:50dvw; color:lightgrey;}
     100%{left:70dvw;color:var(--headerColorFont);}
 }
-button:hover{
-    background-color: var(--backgroundColorHeaderDark,darkgreen);
-    transform: scale(1.2,1.2)
-}
+
 label{
     display: inline-block;
     padding: 10px 10px 10px 1px;
