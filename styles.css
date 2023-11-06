@@ -143,7 +143,7 @@ footer{
     padding-right: 1rem;
 }
 #navigation:has(a){
-    background-color: salmon;
+    background-color: lightseagreen;
 } 
 #contactinfo{
     margin-bottom: 3rem;
