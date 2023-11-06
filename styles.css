@@ -143,7 +143,7 @@ footer{
     padding-right: 1rem;
 }
 #nav:has(a){
-    background-color: orange;
+    background-color: salmon;
 } 
 #contactinfo{
     margin-bottom: 3rem;
