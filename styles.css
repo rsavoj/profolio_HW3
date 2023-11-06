@@ -139,7 +139,7 @@ textarea:focus{
     background-color:var(--formActiveColor, lightblue ) ;
 } 
 footer{
-    background-color:var(--backgroundColorHeader,olive);
+    background-color:var(--backgroundColorHeader,olive) !important;
     color:var(--headerColorFont, black);
     border-style:solid;
     border-width:3px;
