@@ -71,10 +71,11 @@ details{
     margin: 1rem;
     padding: 0.5rem;
     background-color:var(--detailsColor, lightblue);
+    & summary > *{
+        display: inline;
+    }
 }
-details summary > *{
-    display: inline;
-}
+
 h2{
     margin:0.1rem;
     padding:0.25rem;
