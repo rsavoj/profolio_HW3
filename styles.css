@@ -142,9 +142,7 @@ footer{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-nav:has(> a) {
-    color: purple;
-}
+
 #contactinfo{
     margin-bottom: 3rem;
     color:white;
