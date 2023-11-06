@@ -94,7 +94,7 @@ button{
     font-size: 1rem;
     font-family: baskerville;
     background-color: var(--backgroundColorHeader,olive);
-    :hover{
+    &:hover{
         background-color: var(--backgroundColorHeaderDark,darkgreen);
         transform: scale(1.2,1.2)
     }
