@@ -73,6 +73,7 @@ section{
     grid-column: 2;
 }
 #element3{
+    grid-row: 1;
     grid-column: 3;
 }
 
