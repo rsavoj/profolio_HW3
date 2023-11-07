@@ -58,15 +58,21 @@ section{
 }
 #aboutme{
     display: grid;
-    grid-template-columns:75%, 25%;
+    grid-template-columns:40%, 40%, 20%;
     gap: 1rem;
     margin:0;
     padding-top: 0.5rem; 
     padding-bottom: 0.5rem;
     background-color:var(--backgroundColorBody,olive); 
-    font-size: 1rem;
-    
+    font-size: 1rem;  
 }
+#picture1{
+    grid-column: 1;
+}
+#picture2{
+    grid-column: 2;
+}
+
 #aboutme>h2{
     margin:0rem;   
 }
