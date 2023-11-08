@@ -63,6 +63,9 @@ section{
     background-color:var(--backgroundColorBody,olive); 
     font-size: 1rem;  
 }
+img{
+    margin: 0.5rem;
+}
 
 #pictures{
     display: flex;
