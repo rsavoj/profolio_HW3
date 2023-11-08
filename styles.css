@@ -105,6 +105,8 @@ h2{
     color: var(--headerColorFont, black);
 }
 body{
+    display: grid;
+    
     color:black;
     font-family: baskerville;
 }
@@ -177,16 +179,5 @@ footer{
     background-color:var(--headerColorFont, black);
 }
 fieldset{
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35%;
-    padding-inline-start: 0.75%;
-    padding-inline-end: 0.75%;
-    padding-block-end: 0.625%;
-    min-inline-size: min-content;
-    border-width: 2px;
-    border-style: groove;
-    border-color: rgb(192, 192, 192);
-    border-image: initial;
+    display: inline-block;
 }
