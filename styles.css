@@ -106,7 +106,8 @@ h2{
 }
 body{
     display: grid;
-    
+    grid-template-columns: auto;
+    grid-template-columns: auto auto auto auto;
     color:black;
     font-family: baskerville;
 }
