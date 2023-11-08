@@ -57,8 +57,6 @@ section{
     background-color:var(--backgroundColorBody,olive);
 }
 #aboutme{
-   
-  
     margin:0;
     padding-top: 0.5rem; 
     padding-bottom: 0.5rem;
@@ -71,11 +69,7 @@ section{
     padding:0.2rem;
 
 }
-#element3{
-    grid-row: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+
 
 #aboutme>h2{
     margin:0rem;   
