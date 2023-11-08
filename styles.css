@@ -38,7 +38,8 @@ img {
     object-position: center;
 }
 #navigation{
-    
+    display: flex;
+    justify-content: space-evenly;
     background-color:var(--headerColorFont, black);
 }
 #navigation a{
