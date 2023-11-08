@@ -16,8 +16,6 @@ html {
     src: url(CLARENDON.woff);}
 
 #headerID{
-    display: flex;
-    flex-wrap: nowrap;
     padding:0;
 
 }
