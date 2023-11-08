@@ -134,16 +134,16 @@ button{
 }
 @keyframes buttonfloat{
     0%{
-        left:3dvw;
+        left:3%;
         color:blue;
         color:var(--color1);}
     25%{ 
-        left:25dvw;
+        left:25%;
         color:(green);
         color:var(--color0);
     }
-    50%{left:50dvw; color:lightgrey;}
-    100%{left:70dvw;color:var(--headerColorFont);}
+    50%{left:50%; color:lightgrey;}
+    100%{left:70%;color:var(--headerColorFont);}
 }
 
 label{
