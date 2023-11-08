@@ -110,13 +110,17 @@ button{
     font-size: 1rem;
     font-family: baskerville;
     background-color: var(--backgroundColorHeader,olive);
-    &:hover, &:touch-action {
+    &:hover{
         background-color: var(--backgroundColorHeaderDark,darkgreen);
         transform: scale(1.2,1.2)
     }
     &:touch-action{
         color:var(--headerColorFont);
     }
+}
+button:touch-action {
+    background-color: var(--backgroundColorHeaderDark,darkgreen);
+    transform: scale(1.2,1.2)
 }
 #introanimation{
     color:var(--headerColorFont);
