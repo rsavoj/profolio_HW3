@@ -149,6 +149,7 @@ button{
 label{
     display: inline-block;
     padding: 1em 1em 1em 0.5em;
+    padding: 1em 1em 1em 0.5em;
 }
 input, textarea{
     font-family: baskerville;
