@@ -69,7 +69,7 @@ section{
 }
 #aboutmetitle{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row: 1;
 }
 #picture1{
@@ -83,7 +83,7 @@ section{
 #element3{
     grid-row: 3;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
 }
 
 #aboutme>h2{
