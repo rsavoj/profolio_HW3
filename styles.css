@@ -114,6 +114,9 @@ button{
         background-color: var(--backgroundColorHeaderDark,darkgreen);
         transform: scale(1.2,1.2)
     }
+    &:touch-action{
+        color:var(--headerColorFont);
+    }
 }
 #introanimation{
     color:var(--headerColorFont);
