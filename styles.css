@@ -114,14 +114,12 @@ button{
         background-color: var(--backgroundColorHeaderDark,darkgreen);
         transform: scale(1.2,1.2)
     }
-    &:touch-action{
-        color:var(--headerColorFont);
+    &:active{
+        background-color: var(--backgroundColorHeaderDark,darkgreen);
+        transform: scale(1.2,1.2)
     }
 }
-button:touch-action {
-    background-color: var(--backgroundColorHeaderDark,darkgreen);
-    transform: scale(1.2,1.2)
-}
+
 #introanimation{
     color:var(--headerColorFont);
     animation-name: buttonfloat;
