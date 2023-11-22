@@ -122,9 +122,9 @@
                     <input id="email" type="email" name="email" >
                     <br>
 
-                    <label for="message">Message: </label>
+                    <label for="comments">Message: </label>
                     <br>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="comments" name="comments"></textarea>
                     <br>
                   
                     <label for="reason">Choose your contact reason:</label>
@@ -135,6 +135,8 @@
                         <option value="Reference">
                         <option value="Personal">
                     </datalist>
+                   <input type="hidden" name="bot" value="true">
+
                     <br>
                   
                     <button type="button" onclick="alert('You submitted Yay!')"><b>submit</b></button>
