@@ -169,7 +169,7 @@ textarea:focus{
     display: none 
 }
 :user-invalid + #email_message {
-    display: inline;
+    display: block;
     color: red ;
 }
 footer{
