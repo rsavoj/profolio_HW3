@@ -168,9 +168,9 @@ textarea:focus{
 .message{
     display: none  
 }
-:user-invalid + .message {
-    display: block;
-    color: red
+:user-invalid + #email_message {
+    display: block !important;
+    color: red ;
 }
 footer{
     background-color:var(--backgroundColorHeader,olive) !important;
