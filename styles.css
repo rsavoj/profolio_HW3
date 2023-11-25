@@ -168,7 +168,7 @@ textarea:focus{
 .message{
     display: none 
 }
-:user-invalid + #email_message {
+:user-invalid + .message {
     display: block;
     color: red ;
 }
