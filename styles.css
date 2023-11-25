@@ -9,6 +9,10 @@
     --color1:color-mix(in lch, magenta, maroon);
     ;
 }
+:user-invalid{
+    color: red;
+    background-color: red;
+}
 html {
     width: 100vw; 
 }
