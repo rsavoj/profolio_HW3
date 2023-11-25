@@ -166,10 +166,10 @@ textarea:focus{
     background-color:var(--formActiveColor, lightblue ) ;
 }
 .message{
-    
+    display: none 
 }
 :user-invalid + #email_message {
-    display: block !important;
+    display: inline;
     color: red ;
 }
 footer{
