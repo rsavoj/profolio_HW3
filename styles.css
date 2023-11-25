@@ -13,6 +13,9 @@
     color: red;
     background-color: red;
 }
+:out-of-range{
+    color: blue;
+}
 html {
     width: 100vw; 
 }
