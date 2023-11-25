@@ -115,17 +115,28 @@
                 <fieldset>
                     <label for="nameEntry">Enter name: <span aria-label="required">* </span></label>
                     <br>
+                    
                     <input id="nameEntry"  name="name" required >
                     <br>
+                    <div class="message">
+                        invalid input: this is a required field 
+                    </div>
+                    
                     <label for="email">Enter Email: </label>
                     <br>
                     <input id="email" type="email" name="email" required   >
                     <br>
+                    <div class="message">
+                        invalid input: invalid input this is a required field
+                    </div>
 
                     <label for="comments">Message: </label>
                     <br>
                     <textarea id="comments" name="comments" required minlength="10"  maxlength="500"></textarea>
                     <br>
+                    <div class="message">
+                        invalid input: this is a required field
+                    </div>
                   
                    
                    <input type="hidden" name="possible_bot" value="true">
