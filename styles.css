@@ -169,7 +169,7 @@ textarea:focus{
 .message{
     display: none  
 }
-.message:has(.required:invalid){
+.message:has(~ .required:invalid){
     display: block;
     color: red
 }
