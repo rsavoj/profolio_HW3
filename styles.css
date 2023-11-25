@@ -10,8 +10,8 @@
     ;
 }
 :user-invalid{
-    color: red;
-    background-color: red;
+
+    background-color: rgb(234, 149, 149);
 }
 :out-of-range{
     color: blue;
@@ -165,7 +165,14 @@ input:focus{
 } 
 textarea:focus{
     background-color:var(--formActiveColor, lightblue ) ;
-} 
+}
+.message{
+    display: none  
+}
+.message:has(.required:invalid){
+    display: block;
+    color: red
+}
 footer{
     background-color:var(--backgroundColorHeader,olive) !important;
     color:var(--headerColorFont, black);
