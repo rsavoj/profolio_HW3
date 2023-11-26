@@ -146,9 +146,11 @@
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
                         email.setCustomValidity("Please Enter A valid Email Address");
+                        email.reportValidity();
                     } 
                     else if(email.validity.valueMissing){
                         email.setCustomValidity("Email Address is required");
+                        email.reportValidity();
                     }
                     else {
                         email.setCustomValidity("");
