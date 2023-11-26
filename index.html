@@ -117,7 +117,7 @@
                     <br>
                     
                     <input id="nameEntry"  name="name" required >
-                    <div class="message">
+                    <div class="message" id="name_error">
                         invalid input: this is a required field. The length must be between 6 and 500 characters with only standard characters.
                     </div>
                     
@@ -149,7 +149,9 @@
 
                 const form = document.querySelector("form")
                 const email = document.getElementById("email");
-                const error_email = document.getElementById("email_message")
+                const error_email = document.getElementById("email_message");
+                const name = document.getElementById("nameEntry");
+                const error_name = document.getElementById("name_error");
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
                         email.setCustomValidity("Please Enter A valid Email Address!");
@@ -166,6 +168,14 @@
                     else {
                         email.setCustomValidity("");
                         document.getElementById("email_message").style.display="none"
+                    }
+                });
+                name.addEventListener("name_input", (event) => {
+                    if (name.validity.valueMissing) {
+                        name.setCustomValidity("Name Address is required");
+                        name.reportValidity();
+                        error_name.innerHTML = "Name is required!"
+                        error_name.style.display="block"
                     }
                 });
                  
