@@ -16,6 +16,8 @@
     color: blue;
 }
 .message{
+    font-size: 1rem;
+    color: red;
     display: none;
 }
 html {
