@@ -165,13 +165,7 @@ input:focus{
 textarea:focus{
     background-color:var(--formActiveColor, lightblue ) ;
 }
-.message{
-    display: none 
-}
-:user-invalid + .message {
-    display: block;
-    color: red ;
-}
+
 footer{
     background-color:var(--backgroundColorHeader,olive) !important;
     color:var(--headerColorFont, black);
