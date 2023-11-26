@@ -125,7 +125,7 @@
                     <label for="email">Enter Email: </label>
                     <br>
                     <input id="email" type="email" name="email" required   >
-                    <div class="message">
+                    <div class="message" id="email_message">
                         invalid input: this is a required field. The length must be between 6 and 500 characters with only standard characters.
                     </div>
                     
@@ -153,6 +153,7 @@
                     if (email.validity.typeMismatch) {
                         email.setCustomValidity("Please Enter A valid Email Address!!!! %");
                         email.reportValidity();
+                        document.getElementById("email_message").style.display="block"
                     } 
                     else if(email.validity.valueMissing){
                         email.setCustomValidity("Email Address is required");
