@@ -150,7 +150,7 @@
                 const form = document.querySelector("form")
                 const email = document.getElementById("email");
                 const error_email = document.getElementById("email_message");
-                const name = document.getElementById("nameEntry");
+                const name_input = document.getElementById("nameEntry");
                 const error_name = document.getElementById("name_error");
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
@@ -170,10 +170,10 @@
                         document.getElementById("email_message").style.display="none"
                     }
                 });
-                name.addEventListener("name_input", (event) => {
-                    if (name.validity.valueMissing) {
-                        name.setCustomValidity("Name Address is required");
-                        name.reportValidity();
+                name_input.addEventListener("name_input", (event) => {
+                    if (name_input.validity.valueMissing) {
+                        name_input.setCustomValidity("Name Address is required");
+                        name_input.reportValidity();
                         error_name.innerHTML = "Name is required!"
                         error_name.style.display="block"
                     }
