@@ -139,9 +139,8 @@
                     <input type="submit" value="submit">
                 </fieldset>
             </form>
-            <script type="text/javascript">
-               
-               <!--
+            <script >
+
                 const form = document.querySelector("form")
                 const email = document.getElementById("email");
                 email.addEventListener("input", (event) => {
@@ -155,15 +154,8 @@
                         email.setCustomValidity("");
                     }
                 });
-                form.addEventListener("submit")(event) => {
-                    if (!email.validity.valid) {
-                        // If it isn't, we display an appropriate error message
-                        showError();
-                        // Then we prevent the form from being sent by canceling the event
-                        event.preventDefault();
-                    }
-                });   
-                 -->
+                 
+              
             </script>
         </section>
     </main>
