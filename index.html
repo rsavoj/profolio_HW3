@@ -146,10 +146,21 @@
                 </fieldset>
             </form>
             <script type="text/javascript">
-                <!--
-
                
-                    alert("Test");
+               <!--
+                const email = document.getElementById("email");
+                email.addEventListener("input", (event) => {
+                    if (email.validity.typeMismatch) {
+                        email.setCustomValidity("Please Enter A valid Email Address");
+                    } 
+                    else if(email.validity.valueMissing){
+                        email.setCustomValidity("Email Address is required");
+                    }
+                    else {
+                        email.setCustomValidity("");
+                    }
+                });
+                    
                  -->
             </script>
         </section>
