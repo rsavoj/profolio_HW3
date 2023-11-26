@@ -117,19 +117,25 @@
                     <br>
                     
                     <input id="nameEntry"  name="name" required >
-                   
+                    <div class="message">
+                        invalid input: this is a required field. The length must be between 6 and 500 characters with only standard characters.
+                    </div>
                     
                     <br>
                     <label for="email">Enter Email: </label>
                     <br>
                     <input id="email" type="email" name="email" required   >
-                    
+                    <div class="message">
+                        invalid input: this is a required field. The length must be between 6 and 500 characters with only standard characters.
+                    </div>
                     
                     <br>
                     <label for="comments">Message: </label>
                     <br>
                     <input id="comments" type="text" name="comments" required minlength="10"  maxlength="500" pattern="([A-z0-9\s.,!:]+)">
-                    
+                    <div class="message">
+                        invalid input: this is a required field. The length must be between 6 and 500 characters with only standard characters.
+                    </div>
                     <br>
                    
                    <input type="hidden" name="possible_bot" value="true">

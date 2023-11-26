@@ -15,6 +15,9 @@
 :out-of-range{
     color: blue;
 }
+.message{
+    display: none;
+}
 html {
     width: 100vw; 
 }
