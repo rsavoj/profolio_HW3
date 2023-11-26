@@ -149,18 +149,23 @@
 
                 const form = document.querySelector("form")
                 const email = document.getElementById("email");
+                const error_email = document.getElementById("email_message")
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
-                        email.setCustomValidity("Please Enter A valid Email Address!!!! %");
+                        email.setCustomValidity("Please Enter A valid Email Address!");
                         email.reportValidity();
-                        document.getElementById("email_message").style.display="block"
+                        error_email.innerHTML = "Please Enter A valid Email Address!"
+                        error_email.style.display="block"
                     } 
                     else if(email.validity.valueMissing){
                         email.setCustomValidity("Email Address is required");
                         email.reportValidity();
+                        error_email.innerHTML = "Email Address is required!"
+                        error_email.style.display="block"
                     }
                     else {
                         email.setCustomValidity("");
+                        document.getElementById("email_message").style.display="none"
                     }
                 });
                  
