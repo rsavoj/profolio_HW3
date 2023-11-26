@@ -171,10 +171,7 @@
                     }
                 });
                 name_input.addEventListener("name_input", (event) => {
-                    let re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                    if (re.test(name_input)) {
-                        alert("bad")
-                    }
+                   
                     if (name_input.validity.valueMissing) {
                         name_input.setCustomValidity("Name Address is required");
                         name_input.reportValidity();
