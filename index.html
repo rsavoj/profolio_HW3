@@ -185,7 +185,7 @@
                         name_input.setCustomValidity("Name Address is required");
                         name_input.reportValidity();
                         error_name.textContent = "Name is required!"
-                        error_name.style.display="block"
+                       
                         event.preventDefault();
                     }
                     else{
@@ -200,7 +200,7 @@
                         characterInvalid = comments.value[comments.value.search(reg)];
                         report = "Invalid Character: " + characterInvalid
                         error_comments.textContent = report
-                        error_comments.style.visibility="visible";
+                        error_comments.style.display="block"
                          
                         comments.setCustomValidity(report);
                         comments.reportValidity();
