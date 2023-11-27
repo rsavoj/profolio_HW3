@@ -231,11 +231,11 @@
                         
                         if(Number(charsLeft) < 40){
                             alert("The color should change")
-                            error_comments.style.color="red"; 
+                            error_comments.setAttribute("style", "color:red");
                            
                         }
                         else{
-                            error_comments.style.color="black"; 
+                            error_comments.setAttribute("style", "color:green");
                         }
                     }
                 });
