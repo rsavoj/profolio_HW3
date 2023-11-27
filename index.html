@@ -138,7 +138,7 @@
                         
                     </div>
                     <br>
-                   
+                   <input type="hidden" name="form_errors">
                    <input type="hidden" name="possible_bot" value="true">
 
                     <br>
@@ -262,7 +262,7 @@
                 });
                 
                 form.addEventListener("submit", async (e) => {
-                    let url = "http://httpbin.org/get"
+                    
                    
                     let responseData = await postFormFieldsAsJson({url,form_errors});
                     event.preventDefault();
