@@ -167,7 +167,7 @@
                        
                         email.reportValidity();
                         myJSON = '{"email_not_valid":"' + email.value +'"}';
-                        form_errors.push(parse(myJSON))
+                        form_errors.push(JSON.parse(myJSON))
 
                         event.preventDefault();
                         
@@ -230,7 +230,7 @@
                     else if(comments.validity.tooShort){
                         comments.setCustomValidity("Please Enter a longer message");
                         comments.reportValidity();
-                        parsedComments = JSON.parse(comments)
+                        
                         error_comments.classList.remove('translate')
                        
                     }
