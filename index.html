@@ -346,7 +346,6 @@
             }
             window.onload = paint;
             checkBox.addEventListener("change", (event) => {
-              
                 if (checkBox.checked == true){
                     changeToDark()
                 }else{
@@ -354,12 +353,13 @@
                 }
                
                 saveToLocalStorage();
-                function saveToLocalStorage(){
-                    localStorage.setItem('checkboxState', checkBox.checked)
-                    localStorage.setItem('themeState',theme.value )
-                }
+                
         
             });
+            function saveToLocalStorage(){
+                    localStorage.setItem('checkboxState', checkBox.checked)
+                    localStorage.setItem('themeState',theme.value )
+            }
             function changeToDark(){
                 root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
                 root_acess.style.setProperty( '--headerColorFont', 'black');
