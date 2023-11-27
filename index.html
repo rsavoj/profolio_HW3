@@ -346,12 +346,12 @@
                     changeToDark()
                 }else{
                     changeToLight()
-                
                 }
                
                 saveToLocalStorage();
                 function saveToLocalStorage(){
                     localStorage.setItem('checkboxState', checkBox.checked)
+                    localStorage.setItem('themeState',theme.value )
                 }
         
             });
@@ -373,13 +373,21 @@
             }
             function paint(){
                 let checkBox = document.getElementById("mode");
+                customTheme.style.display="none";
                 if (checkBox.checked == true){
                     changeToDark();
                 }
                 else{
                     changeToLight(); 
                 }
-            }
+                let theme = document.getElementById("theme_selection");
+                if(theme.value === "Christmass"){
+                    updateChristmassTheme()
+                }
+                if(theme.value === "Custom"){
+                    updateChristmassTheme()
+                }
+            }   
            
             
             const textColorPicker = document.getElementById("text-color-picker");
@@ -396,7 +404,6 @@
                 }
                 else if (theme.value === "Christmass"){
                     updateChristmassTheme()
-                    customTheme.style.display="none";
                 }
                 else{
                     paint()
@@ -411,6 +418,7 @@
                     document.body.style.fontFamily ="Garamond";
                     root_acess.style.setProperty( '--backgroundColorBody', 'green');
                     root_acess.style.setProperty( '--headerColorFont',  'red');
+                    customTheme.style.display="none";
                 }
             });  
         </script>
