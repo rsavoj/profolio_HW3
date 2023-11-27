@@ -76,8 +76,8 @@ img {
     animation-duration: 4s;
 }
 @keyframes Appear {
-    from {display: block;}
-    to {display: none;}
+    from {opacity: 0;}
+    to { opacity: 1;}
   }
 #navigation a{
     color: white;
