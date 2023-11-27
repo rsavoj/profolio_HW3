@@ -340,14 +340,7 @@
                 if (checkBox.checked == true){
                     changeToDark()
                 }else{
-                    root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
-                    root_acess.style.setProperty( '--formActiveColor', '#B2BEB5');
-                    root_acess.style.setProperty( '--backgroundColorHeader', '#B2BEB5');
-                    root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
-                    root_acess.style.setProperty( '--backgroundColorHeaderDark', '#91a195');
-                    root_acess.style.setProperty( '--backgroundColorBody', '#DEDEDE');
-                    root_acess.style.setProperty( '--headerColorFont', '#36454F');
-                    root_acess.style.setProperty( '--lightFontColor', 'FloralWhite');
+                    changeToLight()
                 
                 }
                
@@ -363,13 +356,26 @@
                 root_acess.style.setProperty( '--backgroundColorHeader', 'DarkSlateGrey');
                 root_acess.style.setProperty( '--lightFontColor', 'RebeccaPurple');
             }
+            function changeToLight(){
+                root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
+                root_acess.style.setProperty( '--formActiveColor', '#B2BEB5');
+                root_acess.style.setProperty( '--backgroundColorHeader', '#B2BEB5');
+                root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
+                root_acess.style.setProperty( '--backgroundColorHeaderDark', '#91a195');
+                root_acess.style.setProperty( '--backgroundColorBody', '#DEDEDE');
+                root_acess.style.setProperty( '--headerColorFont', '#36454F');
+                root_acess.style.setProperty( '--lightFontColor', 'FloralWhite');
+            }
             function paint(){
                 let checkBox = document.getElementById("mode");
                 if (checkBox.checked == true){
                     changeToDark();
-                  
+                }
+                else{
+                    changeToLight(); 
                 }
             }
+           
             theme = document.getElementById("theme_selection");
             const textColorPicker = document.getElementById("text-color-picker");
             const bgColorPicker = document.getElementById("bg-color-picker");
@@ -389,13 +395,9 @@
                 function updateCustomTheme(){
                     root_acess.style.setProperty( '--backgroundColorBody',  bgColorPicker.value);
                     root_acess.style.setProperty( '--headerColorFont',  textColorPicker.value);
-                    
                     document.body.style.fontFamily = fontSelector.value;
                 }
-            });
-            
-                
-            
+            });  
         </script>
        
         <section id="contactinfo">
