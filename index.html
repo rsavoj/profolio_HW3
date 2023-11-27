@@ -171,7 +171,7 @@
                 });
                 name_input.addEventListener("change", (event) => {
                     
-                    const reg = /[\W]/
+                    const reg = /[\W\s]/
                     if ((reg.test(name_input.value))) { 
                         
                         name_input.setCustomValidity("Please Enter A name with valid characters");
