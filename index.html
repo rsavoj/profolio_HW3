@@ -366,11 +366,11 @@
             function paint(){
                 let checkBox = document.getElementById("mode");
                 if (checkBox.checked == true){
-                    changeToDark()
+                    changeToDark();
                   
                 }
             }
-            theme = document.getElementById("theme_selection")
+            theme = document.getElementById("theme_selection");
             theme.addEventListener("change", (event) => {
                 if(theme.value === "Custom"){
                     customTheme.style.display= "none";
