@@ -174,22 +174,21 @@
                 });
                 name_input.addEventListener("change", (event) => {
                     
-                    const re = /hello/;
+                    const reg = /[\W]/
                     if (re.test(name_input.value)) { 
                         console.log(name_input)
-                        error_email.innerHTML = "HAHAHAHA!"
-                        error_email.style.display="block"
+                        error_name.innerHTML = "Error Nonstandard Character"
+                        error_name.style.display="block"
                     }
-                    else{
-                        console.log(name_input)
-                        error_email.innerHTML = "NANANAN!"
-                        error_email.style.display="block"
-                    }
-                    if (name_input.validity.valueMissing) {
+                  
+                    else if (name_input.validity.valueMissing) {
                         name_input.setCustomValidity("Name Address is required");
                         name_input.reportValidity();
                         error_name.innerHTML = "Name is required!"
                         error_name.style.display="block"
+                    }
+                    else{
+                        error_name.style.display=""
                     }
                 });
                  
