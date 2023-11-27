@@ -193,10 +193,22 @@
                         error_name.className = "error"
                     }
                 });
+                comments.addEventListener("change", (event) => {
+                    const reg = /[\W\s]+/
+                
+                });
                  
             function checkCharacters(textFeild){
                 
                 let re = ["\w\s"]
+                if ((reg.test(comments.value))) { 
+                        
+                        comments.setCustomValidity("Please Enter A name with valid characters");
+                        comments.reportValidity();
+                        error_comments.textContent = "Error Nonstandard Character"
+                        error_comments.style.display="block"
+                        event.preventDefault();
+                }
             }
             </script>
         </section>
