@@ -130,7 +130,7 @@
                     <label for="comments">Message: </label>
                     <br>
                     <textarea id="comments" name="comments" required minlength="10"  maxlength="500"></textarea>
-                    <span class="error" id="error_email" aria-live="polite"></span>
+                    <span class="error" id="error_comments" aria-live="polite"></span>
                     
                     <br>
                    
@@ -228,13 +228,14 @@
                         comments.className = "valid";
                         comments.setCustomValidity("");
                         comments.className = "error";
-                        
+                        document.getElementById("error_comments")
                         if(Number(charsLeft) < 40){
-                            alert("The color should change")
+                            alert("The color should change").style.color("red")
                             error_comments.setAttribute("color", "red");
                            
                         }
                         else{
+                            
                             error_comments.css("color", "green");
                         }
                     }
