@@ -339,10 +339,11 @@
             
             
             if(checkedState){
-                checkBox.checked = JSON.parse(checkedState)
+                
+                
             }
             if(themeState){
-                theme.value = JSON.parse(themeState)
+                theme.value =  JSON.stringify(themeState)
             }
             window.onload = paint;
             checkBox.addEventListener("change", (event) => {
@@ -361,7 +362,7 @@
                     
             }
             function saveToLocalStorageTheme(){
-                localStorage.setItem('themeState',theme.value );
+               // localStorage.setItem('themeState',theme.value );
             }
             function changeToDark(){
                 root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
