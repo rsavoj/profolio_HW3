@@ -371,7 +371,12 @@
             }
             theme = getElementById("theme_selection")
             theme.addEventListener("change", (event) => {
-                if(theme.value)
+                if(theme.value === "Custom"){
+                    customTheme.style.display("none")
+                }
+                else{
+                    customTheme.style.display("block")
+                }
             });
                 
             
