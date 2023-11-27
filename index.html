@@ -130,7 +130,7 @@
                     <label for="comments">Message: </label>
                     <br>
                     <textarea id="comments" name="comments" required minlength="10"  maxlength="500"></textarea>
-                     
+                    <span class="error" id="error_email" aria-live="polite"></span>
                     
                     <br>
                    
@@ -148,7 +148,8 @@
                 const error_email = document.getElementById("#email + span.error");
                 const name_input = document.getElementById("nameEntry");
                 const error_name = document.querySelector("#nameEntry + span.error");
-                
+                const comments = document.getElementById("comments");
+                const error_comments = document.querySelector("#comments + span.error");
                 
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
@@ -170,7 +171,7 @@
                 });
                 name_input.addEventListener("change", (event) => {
                     
-                    const reg = /[\W\s]/
+                    const reg = /[\W\s]+/
                     if ((reg.test(name_input.value))) { 
                         
                         name_input.setCustomValidity("Please Enter A name with valid characters");
