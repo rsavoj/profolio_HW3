@@ -228,7 +228,9 @@
                         comments.className = "valid";
                         comments.setCustomValidity("");
                         comments.className = "error";
-                        if(charsLeft < 40){
+                        error_comments.style.color="blue"; 
+                        if(Number(charsLeft) < 40){
+                            alert("The color should change")
                             error_comments.style.color="red"; 
                            
                         }
