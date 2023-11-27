@@ -234,7 +234,7 @@
                     else if(comments.validity.tooShort){
                         comments.setCustomValidity("Please Enter a longer message");
                         comments.reportValidity();
-                        myJSON = '{"comments_tooShort":"' + report +'"}';
+                        myJSON = '{"comments_tooShort":"' + comments.value +'"}';
                         form_errors.push(JSON.parse(myJSON));
                         error_comments.classList.remove('translate')
                        
