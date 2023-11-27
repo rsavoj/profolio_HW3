@@ -371,12 +371,13 @@
                 }
             }
             theme = document.getElementById("theme_selection");
+            const textColorPicker = document.getElementById("text-color-picker");
+            const bgColorPicker = document.getElementById("bg-color-picker");
+            const fontSelector = document.getElementById("font-selector");
             theme.addEventListener("change", (event) => {
                 if(theme.value === "Custom"){
                     customTheme.style.display= "block";
-                    const textColorPicker = document.getElementById("text-color-picker");
-                    const bgColorPicker = document.getElementById("bg-color-picker");
-                    const fontSelector = document.getElementById("font-selector");
+                    
                     textColorPicker.addEventListener("input", updateCustomTheme);
                     bgColorPicker.addEventListener("input", updateCustomTheme);
                     fontSelector.addEventListener("change", updateCustomTheme)
