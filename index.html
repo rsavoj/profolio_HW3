@@ -175,7 +175,8 @@
                         email.setCustomValidity("Email Address is required");
                        
                         email.reportValidity();
-                    
+                        myJSON = '{"email_required":"' + email.value +'"}';
+                        form_errors.push(JSON.parse(myJSON))
                         event.preventDefault();
                     }
                     else {
@@ -191,8 +192,9 @@
                         name_input.setCustomValidity("Please Enter A name with valid characters");
                         name_input.reportValidity();
                         error_name.textContent = "Error Nonstandard Character"
-                        
-                        error_name.style.display="block"
+                        myJSON = '{"name_nonstandardChar":"' + name_input.value +'"}';
+                        form_errors.push(JSON.parse(myJSON));
+                        error_name.style.display="block";
                         event.preventDefault();
                     }
                   
@@ -201,7 +203,8 @@
                         name_input.reportValidity();
                        
                         error_name.textContent = "Name is required!"
-                       
+                        myJSON = '{"name_required":"' + name_input.value +'"}';
+                        form_errors.push(JSON.parse(myJSON));
                         event.preventDefault();
                     }
                     else{
@@ -215,11 +218,13 @@
                     if (!(regex.test(comments.value))) { 
                         characterInvalid = comments.value[comments.value.search(reg)];
                         report = "Invalid Character: " + characterInvalid
-                        error_comments.innerHTML = report
-                        error_comments.style.display="block"
+                        error_comments.innerHTML = report;
+                        error_comments.style.display="block";
                         
                         comments.setCustomValidity(report);
                         comments.reportValidity();
+                        myJSON = '{"comments_value_error":"' + report +'"}';
+                        form_errors.push(JSON.parse(myJSON));
                         error_comments.classList.add('translate');
                         
                       
@@ -229,7 +234,8 @@
                     else if(comments.validity.tooShort){
                         comments.setCustomValidity("Please Enter a longer message");
                         comments.reportValidity();
-                        
+                        myJSON = '{"comments_tooShort":"' + report +'"}';
+                        form_errors.push(JSON.parse(myJSON));
                         error_comments.classList.remove('translate')
                        
                     }
