@@ -231,16 +231,18 @@
                         comments.setCustomValidity("Please Enter a longer message");
                         comments.reportValidity();
                         parsedComments = JSON.parse(comments)
+                        error_comments.classList.remove('translate')
                        
                     }
                     else if(comments.validity.tooLong){
                         
                         comments.setCustomValidity("Please Enter a shorter message");
                         comments.reportValidity();
+                        error_comments.classList.remove('translate')
                       
                     }
                     else{
-                       
+                        error_comments.classList.remove('translate')
                         let length = comments.value.length
                         let charactersRemaining = 500-length
                         let charsLeft = "Characters Remaining: " + charactersRemaining
