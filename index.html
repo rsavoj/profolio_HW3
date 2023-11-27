@@ -174,7 +174,7 @@
                     const reg = /[\W]/
                     if ((reg.test(name_input.value))) { 
                         
-                        name.setCustomValidity("Please Enter A name with valid characters");
+                        name_input.setCustomValidity("Please Enter A name with valid characters");
                         name_input.reportValidity();
                         error_name.textContent = "Error Nonstandard Character"
                         error_name.style.display="block"
