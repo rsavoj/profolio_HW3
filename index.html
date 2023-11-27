@@ -130,8 +130,13 @@
                     <label for="comments">Message: </label>
                     <br>
                     <textarea id="comments" name="comments" required minlength="10"  maxlength="500"></textarea>
+                   <!--
+
                     <span class="error" id="error_comments" aria-live="polite"></span>
-                    
+                   --> 
+                    <div id="error_comments" style="display: none;">
+                        
+                    </div>
                     <br>
                    
                    <input type="hidden" name="possible_bot" value="true">
@@ -149,7 +154,11 @@
                 const name_input = document.getElementById("nameEntry");
                 const error_name = document.querySelector("#nameEntry + span.error");
                 const comments = document.getElementById("comments");
+               <!--
                 const error_comments = document.querySelector("#comments + span.error");
+                
+                -->
+                const error_comments = document.getElementById("error_comments")
                 
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
@@ -199,7 +208,7 @@
                     if (!(regex.test(comments.value))) { 
                         characterInvalid = comments.value[comments.value.search(reg)];
                         report = "Invalid Character: " + characterInvalid
-                        error_comments.textContent = report
+                        error_comments.innerHTML = report
                         error_comments.style.display="block"
                          
                         comments.setCustomValidity(report);
@@ -223,7 +232,7 @@
                         let length = comments.value.length
                         let charactersRemaining = 500-length
                         let charsLeft = "Characters Remaining: " + charactersRemaining
-                        error_comments.textContent = charsLeft
+                        error_comments.innerHTML = charsLeft
                         error_comments.style.display="block";
                         comments.className = "valid";
                         comments.setCustomValidity("");
