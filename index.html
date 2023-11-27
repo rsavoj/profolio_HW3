@@ -194,7 +194,7 @@
                     }
                 });
                 comments.addEventListener("change", (event) => {
-                    const reg = /[\W\s]+/
+                    const reg = /[\W\s]/
                     if ((reg.test(comments.value))) { 
                         
                         comments.setCustomValidity("Please Enter A name with valid characters");
