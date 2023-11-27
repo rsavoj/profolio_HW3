@@ -189,7 +189,7 @@
                         name_input.setCustomValidity("Please Enter A name with valid characters");
                         name_input.reportValidity();
                         error_name.textContent = "Error Nonstandard Character"
-                        form_error.push("Error Nonstandard Character")
+                        form_errors.push("Error Nonstandard Character")
                         error_name.style.display="block"
                         event.preventDefault();
                     }
@@ -215,7 +215,7 @@
                         report = "Invalid Character: " + characterInvalid
                         error_comments.innerHTML = report
                         error_comments.style.display="block"
-                        form_error.push(report) 
+                        form_errors.push(report) 
                         comments.setCustomValidity(report);
                         comments.reportValidity();
                         error_comments.classList.add('translate');
@@ -227,13 +227,13 @@
                     else if(comments.validity.tooShort){
                         comments.setCustomValidity("Please Enter a longer message");
                         comments.reportValidity();
-                        form_error.push("Please Enter a longer message")
+                        form_errors.push("Please Enter a longer message")
                     }
                     else if(comments.validity.tooLong){
                         
                         comments.setCustomValidity("Please Enter a shorter message");
                         comments.reportValidity();
-                        form_error.push("Please Enter a shorter message")
+                        form_errors.push("Please Enter a shorter message")
                     }
                     else{
                         error_comments.classList.remove('translate');
