@@ -294,15 +294,19 @@
             let checkBox = document.getElementById("mode");
             const checkedState = localStorage.getItem('checkboxState');
             if(checkedState){
-                checkBox.checked = JSON.parse(savedState)
+                    checkBox.checked = JSON.parse(savedState)
             }
-            if (checkBox.checked == true){
-                root_acess.style.setProperty( '--backgroundColorBody', 'orange');
-            }
-
-            function saveToLocalStorage(){
-               localStorage.setItem('checkboxState', checkBox.checked)
-            }
+            checkBox.addEventListener("change", (event) => {
+                if (checkBox.checked == true){
+                    root_acess.style.setProperty( '--backgroundColorBody', 'orange');
+                }
+            
+                function saveToLocalStorage(){
+                    localStorage.setItem('checkboxState', checkBox.checked)
+                }
+        
+            });
+           
                 
             
         </script>
