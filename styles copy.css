@@ -3,6 +3,7 @@
     --formActiveColor: #a8caef;
     --backgroundColorHeader: #B2BEB5;
     --backgroundColorHeaderDark: #91a195;
+    --lightFontColor:FloralWhite;
     --backgroundColorBody: #DEDEDE;
     --headerColorFont: #36454F;
     --color0 : color(display-p3 .93 .163 .869);
@@ -39,7 +40,7 @@ img {
     background-color:var(--headerColorFont, black);
 }
 #navigation a{
-    color: white;
+    color: var(--lightFontColor);
     font-size: 1rem;
     text-decoration: none;
 }
@@ -177,7 +178,7 @@ footer{
 } 
 #contactinfo{
     margin-bottom: 3rem;
-    color:white;
+    color:var(--lightFontColor);
     background-color:var(--headerColorFont, black);
 }
 fieldset{
