@@ -297,7 +297,7 @@
             </label>
             <label for="theme_selection">Theme:</label>
             <br>
-            <select id="font-selector">
+            <select id="theme_selection" name="theme_selection">
                 <option value="Normal">Normal</option>
                 <option value="Custom">Custom</option>
             <!-- Add more font options as needed -->
@@ -371,7 +371,7 @@
             }
             theme = getElementById("theme_selection")
             theme.addEventListener("change", (event) => {
-
+                if(theme.value)
             });
                 
             
