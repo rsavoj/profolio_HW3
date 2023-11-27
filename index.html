@@ -196,8 +196,8 @@
                 comments.addEventListener("change", (event) => {
                     const regex = /^[\w\s.,!?]*$/;
                     const reg =  /[^\w\s.!?]/g;
-                    if (!(reg.test(comments.value))) { 
-                        characterInvalid = comments.value[comments.value.search(regex)];
+                    if ((regex.test(comments.value))) { 
+                        characterInvalid = comments.value[comments.value.search(reg)];
                         report = "Invalid Character: " + characterInvalid 
                         comments.setCustomValidity(report);
                         comments.reportValidity();
@@ -218,7 +218,7 @@
                     else{
                         comments.className = "valid"
                         comments.setCustomValidity("");
-                        comments.textContent("");
+                        
                         comments.className = "error"
                     }
                 });
