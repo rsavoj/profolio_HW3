@@ -9,6 +9,14 @@
     --color1:color-mix(in lch, magenta, maroon);
     ;
 }
+span {
+    transition-delay: 3s;
+    transition-duration: 1s;
+    
+}
+span.transformed-state{
+    visibility:hidden;
+}
 :user-invalid{
     background-color: rgb(234, 149, 149);
 }
