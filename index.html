@@ -289,12 +289,21 @@
         
        
         <script>
-            var root_acess = document.querySelector(':root');
+            let root_acess = document.querySelector(':root');
             root_acess.style.setProperty( '--backgroundColorHeader:', 'blue');
-            root_acess.style.setProperty( '--backgroundColorBody', 'orange');
-            var checkBox = document.getElementById("mode");
+            
+            
+            let checkBox = document.getElementById("mode");
+            const checkedState = localStorage.getItem('checkboxState');
+            if(checkedState){
+                checkBox.checked = JSON.parse(savedState)
+            }
             if (checkBox.checked == true){
-                root_acess.style.setProperty( '--backgroundColorBody', 'grey');
+                root_acess.style.setProperty( '--backgroundColorBody', 'orange');
+            }
+
+            function saveToLocalStorage{
+                const
             }
         </script>
        
