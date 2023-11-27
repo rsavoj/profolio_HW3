@@ -291,8 +291,6 @@
         <script>
             let root_acess = document.querySelector(':root');
             root_acess.style.setProperty( '--backgroundColorHeader:', 'blue');
-            
-            
             let checkBox = document.getElementById("mode");
             const checkedState = localStorage.getItem('checkboxState');
             if(checkedState){
@@ -302,9 +300,11 @@
                 root_acess.style.setProperty( '--backgroundColorBody', 'orange');
             }
 
-            function saveToLocalStorage{
-                const
+            function saveToLocalStorage(){
+               localStorage.setItem('checkboxState', checkBox.checked)
             }
+                
+            
         </script>
        
         <section id="contactinfo">
