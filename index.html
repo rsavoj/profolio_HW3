@@ -224,13 +224,13 @@
                         let charactersRemaining = 500-length
                         let charsLeft = "Characters Remaining: " + charactersRemaining
                         error_comments.textContent = charsLeft
-                        error_comments.style.display="block"
-                        comments.className = "valid"
+                        error_comments.style.display="block";
+                        comments.className = "valid";
                         comments.setCustomValidity("");
-                        comments.className = "error"
+                        comments.className = "error";
                         if(charsLeft < 40){
-                            error_comments.style.color="red" 
-                            error_comments.style.font
+                            error_comments.style.color="red"; 
+                            error_comments.style.font-size="2rem";
                         }
                     }
                 });
