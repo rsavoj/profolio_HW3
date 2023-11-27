@@ -152,7 +152,7 @@
                 const error_email = document.getElementById("email_message");
                 const name_input = document.getElementById("nameEntry");
                 const error_name = document.getElementById("name_error");
-                const re = /hello/;
+                
                 
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
@@ -175,7 +175,7 @@
                 name_input.addEventListener("change", (event) => {
                     
                     const reg = /[\W]/
-                    if (!(re.test(name_input.value))) { 
+                    if (!(reg.test(name_input.value))) { 
                         console.log(name_input)
                         error_name.innerHTML = "Error Nonstandard Character"
                         error_name.style.display="block"
