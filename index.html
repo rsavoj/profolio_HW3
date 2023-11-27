@@ -253,9 +253,9 @@
                     }
                 });
                 mode = document.getElementById("mode")
-                mode.addEventListener("input", (event) => {
-                    if(mode.){
-
+                mode.addEventListener("change", (event) => {
+                    if(mode.checked){
+                        lightMode = True;
                     }
                 });
                 form.addEventListener("input", (event) => {
