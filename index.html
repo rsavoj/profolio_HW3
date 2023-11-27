@@ -164,14 +164,17 @@
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
                         email.setCustomValidity("Please Enter A valid Email Address!");
-                        form_errors.push("Please Enter A valid Email Address!")
-                        email.reportValidity();
                        
+                        email.reportValidity();
+                        myJSON = '{"email_not_valid":"' + email.value +'"}';
+                        form_errors.push(parse(myJSON))
+
                         event.preventDefault();
+                        
                     } 
                     else if(email.validity.valueMissing){
                         email.setCustomValidity("Email Address is required");
-                        form_errors.push("Email Address is required")
+                       
                         email.reportValidity();
                     
                         event.preventDefault();
@@ -189,7 +192,7 @@
                         name_input.setCustomValidity("Please Enter A name with valid characters");
                         name_input.reportValidity();
                         error_name.textContent = "Error Nonstandard Character"
-                        form_errors.push("Error Nonstandard Character")
+                        
                         error_name.style.display="block"
                         event.preventDefault();
                     }
@@ -197,7 +200,7 @@
                     else if (name_input.validity.valueMissing) {
                         name_input.setCustomValidity("Name is required");
                         name_input.reportValidity();
-                        form_errors.push("Name is required")
+                       
                         error_name.textContent = "Name is required!"
                        
                         event.preventDefault();
@@ -215,7 +218,7 @@
                         report = "Invalid Character: " + characterInvalid
                         error_comments.innerHTML = report
                         error_comments.style.display="block"
-                        form_errors.push(report) 
+                        
                         comments.setCustomValidity(report);
                         comments.reportValidity();
                         error_comments.classList.add('translate');
@@ -227,13 +230,14 @@
                     else if(comments.validity.tooShort){
                         comments.setCustomValidity("Please Enter a longer message");
                         comments.reportValidity();
-                        form_errors.push("Please Enter a longer message")
+                        parsedComments = JSON.parse(comments)
+                       
                     }
                     else if(comments.validity.tooLong){
                         
                         comments.setCustomValidity("Please Enter a shorter message");
                         comments.reportValidity();
-                        form_errors.push("Please Enter a shorter message")
+                      
                     }
                     else{
                        
@@ -267,8 +271,7 @@
                 form.addEventListener("submit", (event) => {
 
                     event.preventDefault();
-                    const errors = JSON.parse(form_errors)
-                    console.log("Form errors:", errorsJSON);
+                    console.log(form_errors)
                 });
                  
           
