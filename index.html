@@ -333,6 +333,9 @@
             let checkBox = document.getElementById("mode");
             const checkedState= localStorage.getItem('checkboxState')
             const themeState= localStorage.getItem('themeState')
+            const textColorPicker = document.getElementById("text-color-picker");
+            const bgColorPicker = document.getElementById("bg-color-picker");
+            const fontSelector = document.getElementById("font-selector");
             window.onload = paint;
             if(checkedState){
                     checkBox.checked = JSON.parse(checkedState)
@@ -385,28 +388,21 @@
                     updateChristmassTheme()
                 }
                 if(theme.value === "Custom"){
-                    updateChristmassTheme()
+                    paint();
                 }
             }   
            
             
-            const textColorPicker = document.getElementById("text-color-picker");
-            const bgColorPicker = document.getElementById("bg-color-picker");
-            const fontSelector = document.getElementById("font-selector");
+            
             theme.addEventListener("change", (event) => {
                 if(theme.value === "Custom"){
-                    customTheme.style.display= "block";
-                    
-                    textColorPicker.addEventListener("input", updateCustomTheme);
-                    bgColorPicker.addEventListener("input", updateCustomTheme);
-                    fontSelector.addEventListener("change", updateCustomTheme)
-                    
+                    updateAllCustom();
                 }
                 else if (theme.value === "Christmass"){
-                    updateChristmassTheme()
+                    updateChristmassTheme();
                 }
                 else{
-                    paint()
+                    paint();
                     customTheme.style.display="none";
                 }
                 function updateCustomTheme(){
@@ -419,6 +415,14 @@
                     root_acess.style.setProperty( '--backgroundColorBody', 'green');
                     root_acess.style.setProperty( '--headerColorFont',  'red');
                     customTheme.style.display="none";
+                }
+                function updateAllCustom(){
+                    customTheme.style.display= "block";
+                    
+                    textColorPicker.addEventListener("input", updateCustomTheme);
+                    bgColorPicker.addEventListener("input", updateCustomTheme);
+                    fontSelector.addEventListener("change", updateCustomTheme)
+                    
                 }
             });  
         </script>
