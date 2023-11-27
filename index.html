@@ -295,22 +295,31 @@
                 <input type="checkbox" class="only_Java" id="mode" name="mode">
                 <span class="slider" class="only_Java"></span>
             </label>
-            <br>
-            <label for="text-color-picker">Text Color:</label>
-            <br>
-            <input type="color" id="text-color-picker">
-            <br>
-            <label for="bg-color-picker">Background Color:</label>
-            <br>
-            input type="color" id="bg-color-picker">
-            <br>
-            <label for="font-selector">Font:</label>
+            <label for="theme_selection">Theme:</label>
             <br>
             <select id="font-selector">
-                <option value="Arial">Arial</option>
-                <option value="Times New Roman">Times New Roman</option>
+                <option value="Normal">Normal</option>
+                <option value="Custom">Custom</option>
             <!-- Add more font options as needed -->
             </select>
+            <section id="customTheme">
+                <br>
+                <label for="text-color-picker">Text Color:</label>
+                <br>
+                <input type="color" id="text-color-picker">
+                <br>
+                <label for="bg-color-picker">Background Color:</label>
+                <br>
+                input type="color" id="bg-color-picker">
+                <br>
+                <label for="font-selector">Font:</label>
+                <br>
+                <select id="font-selector">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                <!-- Add more font options as needed -->
+                </select>
+            </section>
         </form>
         
        
@@ -360,7 +369,10 @@
                   
                 }
             }
-           
+            theme = getElementById("theme_selection")
+            theme.addEventListener("change", (event) => {
+
+            });
                 
             
         </script>
@@ -369,7 +381,7 @@
            <h4>contact:</h4>
             <ol>
                 <li><p>Author: Roya Savoj</p></li>
-               
+        
             </ol>
         </section>
         
