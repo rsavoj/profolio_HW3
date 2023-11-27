@@ -171,7 +171,7 @@
                     }
                 });
                 name_input.addEventListener("input", (event) => {
-                    let re = ["\w\s"]
+                    let re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
                     if (re.test(name_input)) { 
                         alert('badinput')
                     }
