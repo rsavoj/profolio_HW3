@@ -16,6 +16,7 @@ span {
 }
 .transformed-state{
     visibility:hidden;
+    
 }
 :user-invalid{
     background-color: rgb(234, 149, 149);
@@ -23,7 +24,7 @@ span {
 :out-of-range{
     color: blue;
 }
-.message{
+.message .error{
     font-size: 1rem;
     color: red;
     display: none;
