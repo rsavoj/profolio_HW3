@@ -228,6 +228,10 @@
                         comments.className = "valid"
                         comments.setCustomValidity("");
                         comments.className = "error"
+                        if(charsLeft < 40){
+                            error_comments.style.color="red" 
+                            error_comments.style.font
+                        }
                     }
                 });
                 form.addEventListener("input", (event) => {
