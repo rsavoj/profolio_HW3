@@ -111,7 +111,7 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form novalidate action="https://httpbin.org/html" method ="get">
+            <form novalidate action="https://httpbin.org/get" method ="get">
                 <fieldset>
                     <label for="nameEntry">Enter name: 
                     <br>
@@ -193,7 +193,7 @@
                         error_name.className = "error"
                     }
                 });
-                comments.addEventListener("change", (event) => {
+                comments.addEventListener("input", (event) => {
                     const regex = /^[\w\s.,!?]*$/;
                     const reg =  /[^\w\s.,!?]/g;
                     if (!(regex.test(comments.value))) { 
