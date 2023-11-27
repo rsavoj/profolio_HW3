@@ -387,8 +387,9 @@
                     customTheme.style.display="none";
                 }
                 function updateCustomTheme(){
-                    document.body.style.backgroundColor = bgColorPicker.value;
-                    document.body.style.color = textColorPicker.value;
+                    root_acess.style.setProperty( '--backgroundColorBody',  bgColorPicker.value);
+                    root_acess.style.setProperty( '--headerColorFont',  textColorPicker.value);
+                    
                     document.body.style.fontFamily = fontSelector.value;
                 }
             });
