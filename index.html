@@ -200,7 +200,7 @@
                         console.log(comments.value[comments.value.search(regex)]);
                         comments.setCustomValidity("Please Enter A message with only valid characters");
                         comments.reportValidity();
-                        error_comments.textContent = "Error Nonstandard Character"
+                        error_comments.textContent = 'Error Nonstandard Character'
                         error_comments.style.display="block"
                         event.preventDefault();
                     }
@@ -209,10 +209,12 @@
                         comments.reportValidity();
                     }
                     else if(comments.validity.tooLong){
+                        
                         comments.setCustomValidity("Please Enter a shorter message");
                         comments.reportValidity();
                     }
                     else{
+                        comments.className = "valid"
                         comments.textContent = "";
                         comments.className = "error"
                     }
