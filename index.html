@@ -328,13 +328,17 @@
         <script>
              
             let root_acess = document.querySelector(':root');
-            
+            let theme = document.getElementById("theme_selection");
             root_acess.style.setProperty( '--backgroundColorHeader:', 'blue');
             let checkBox = document.getElementById("mode");
             const checkedState= localStorage.getItem('checkboxState')
+            const themeState= localStorage.getItem('themeState')
             window.onload = paint;
             if(checkedState){
                     checkBox.checked = JSON.parse(checkedState)
+            }
+            if(themeState){
+                theme.value = JSON.parse(checkedState)
             }
             checkBox.addEventListener("change", (event) => {
               
@@ -377,7 +381,7 @@
                 }
             }
            
-            theme = document.getElementById("theme_selection");
+            
             const textColorPicker = document.getElementById("text-color-picker");
             const bgColorPicker = document.getElementById("bg-color-picker");
             const fontSelector = document.getElementById("font-selector");
@@ -392,6 +396,7 @@
                 }
                 else if (theme.value === "Christmass"){
                     updateChristmassTheme()
+                    customTheme.style.display="none";
                 }
                 else{
                     paint()
