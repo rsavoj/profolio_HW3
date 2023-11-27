@@ -264,7 +264,8 @@
                 form.addEventListener("submit", async (e) => {
                     
                     let form_err = document.getElementById("form_errors")
-                    form_err.setAttribute('value',form_errors)
+                    stringError = JSON.stringify(form_errors);
+                    form_err.setAttribute('value',stringError);
                     //event.preventDefault();
                     
                 });
