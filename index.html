@@ -217,7 +217,8 @@
                     }
                     else{
                         comments.className = "valid"
-                        comments.textContent = "";
+                        comments.setCustomValidity("");
+                        comments.textContent("");
                         comments.className = "error"
                     }
                 });
