@@ -142,9 +142,7 @@
                    <input type="hidden" name="possible_bot" value="true">
 
                     <br>
-                    <label for="mode" class="switch"></label>
-                        <input id="mode" name="mode" type="checkbox">
-                        <span class="slider"></span>
+                    
                       
                   
                     <input type="submit" id="submit" value="submit">
@@ -262,21 +260,11 @@
                         
                     }
                 });
-                mode = document.getElementById("mode")
-                mode.addEventListener("change", (event) => {
-                    if(mode.checked){
-                        lightMode = True;
-                    }
-                    else{
-                        lightMode = False;
-                    }
-                });
+                
                 form.addEventListener("submit", async (e) => {
                     let url = "http://httpbin.org/get"
                    
                     let responseData = await postFormFieldsAsJson({url,form_errors});
-
-                    
                     event.preventDefault();
                     console.log(form_errors)
                 });
@@ -289,6 +277,22 @@
     
     <footer>
         <h3 id="introanimation"> Thanks!</h3>
+        <label for="mode" class="switch"></label>
+        <input id="mode" name="mode" type="checkbox">
+        <span class="slider"></span>
+        <script>
+            mode = document.getElementById("mode")
+                mode.addEventListener("change", (event) => {
+                    if(mode.checked){
+                        lightMode = True;
+                    }
+                    else{
+                        lightMode = False;
+                    }
+            });
+
+        </script>
+       
         <section id="contactinfo">
            <h4>contact:</h4>
             <ol>
