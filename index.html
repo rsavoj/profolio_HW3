@@ -123,9 +123,8 @@
                     <label for="email">Enter Email: </label>
                     <br>
                     <input id="email" type="email" name="email" required   >
-                    <div class="message" id="email_message">
-                        invalid input: this is a required field. The length must be between 6 and 500 characters with only standard characters.
-                    </div>
+                    <span class="error" id="error_email" aria-live="polite"></span>
+                   
                     
                     <br>
                     <label for="comments">Message: </label>
@@ -147,7 +146,7 @@
 
                 const form = document.querySelector("form")
                 const email = document.getElementById("email");
-                const error_email = document.getElementById("email_message");
+                const error_email = document.getElementById("#email + span.error");
                 const name_input = document.getElementById("nameEntry");
                 const error_name = document.querySelector("#nameEntry + span.error");
                 
@@ -158,12 +157,14 @@
                         email.reportValidity();
                         error_email.innerHTML = "Please Enter A valid Email Address!"
                         error_email.style.display="block"
+                        event.preventDefault();
                     } 
                     else if(email.validity.valueMissing){
                         email.setCustomValidity("Email Address is required");
                         email.reportValidity();
                         error_email.innerHTML = "Email Address is required!"
                         error_email.style.display="block"
+                        event.preventDefault();
                     }
                     else {
                         email.setCustomValidity("");
@@ -175,8 +176,11 @@
                     const reg = /[\W]/
                     if ((reg.test(name_input.value))) { 
                         console.log(name_input)
+                        error_name.setCustomValidity("Please Enter A name with valid characters");
+                        name_input.reportValidity();
                         error_name.textContent = "Error Nonstandard Character"
                         error_name.style.display="block"
+                        event.preventDefault();
                     }
                   
                     else if (name_input.validity.valueMissing) {
@@ -184,6 +188,7 @@
                         name_input.reportValidity();
                         error_name.textContent = "Name is required!"
                         error_name.style.display="block"
+                        event.preventDefault();
                     }
                     else{
                         error_name.textContent = " ";
