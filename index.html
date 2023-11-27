@@ -203,6 +203,14 @@
                         error_comments.style.display="block"
                         event.preventDefault();
                     }
+                    if(comments.validity.tooShort){
+                        comments.setCustomValidity("Please Enter a longer message");
+                        comments.reportValidity();
+                    }
+                    if(comments.validity.tooLong){
+                        comments.setCustomValidity("Please Enter a shorter message");
+                        comments.reportValidity();
+                    }
                 });
                  
           
