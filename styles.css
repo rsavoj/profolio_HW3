@@ -24,7 +24,7 @@
   }
   
   /* The slider */
-  .switch {
+  .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -35,7 +35,7 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-   .switch:before {
+   .slider:before {
     position: absolute;
     content: "";
     height: 26px;
