@@ -169,6 +169,7 @@
                         myJSON = '{"email_not_valid":"' + email.value +'"}';
                         form_errors.push(JSON.parse(myJSON))
 
+
                         event.preventDefault();
                         
                     } 
@@ -270,8 +271,12 @@
                         lightMode = False;
                     }
                 });
-                form.addEventListener("submit", (event) => {
+                form.addEventListener("submit", async (e) => {
+                    let url = "http://httpbin.org/get"
+                   
+                    let responseData = await postFormFieldsAsJson({url,form_errors});
 
+                    
                     event.preventDefault();
                     console.log(form_errors)
                 });
