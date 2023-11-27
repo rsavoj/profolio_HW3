@@ -373,12 +373,25 @@
             theme = document.getElementById("theme_selection");
             theme.addEventListener("change", (event) => {
                 if(theme.value === "Custom"){
-                    customTheme.style.display= "none";
+                    customTheme.style.display= "block";
+                    const textColorPicker = document.getElementById("text-color-picker");
+                    const bgColorPicker = document.getElementById("bg-color-picker");
+                    const fontSelector = document.getElementById("font-selector");
+                    textColorPicker.addEventListener("input", updateCustomTheme);
+                    bgColorPicker.addEventListener("input", updateCustomTheme);
+                    fontSelector.addEventListener("change", updateCustomTheme)
+                    
                 }
                 else{
-                    customTheme.style.display="block";
+                    customTheme.style.display="none";
+                }
+                function updateCustomTheme(){
+                    document.body.style.backgroundColor = bgColorPicker.value;
+                    document.body.style.color = textColorPicker.value;
+                    document.body.style.fontFamily = fontSelector.value;
                 }
             });
+            
                 
             
         </script>
