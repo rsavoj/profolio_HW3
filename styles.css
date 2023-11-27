@@ -22,10 +22,7 @@ span {
     transition-duration: 1s;
     
 }
-.transformed-state{
-    visibility:hidden;
-    
-}
+
 :user-invalid{
     background-color: rgb(234, 149, 149);
 }
@@ -71,8 +68,14 @@ img {
 }
 .translate{
     color: blue;
+    animation-name: Appear;
+    animation-duration: 4s;
 
 }
+@keyframes Appear {
+    from {display: block;}
+    to {display: none;}
+  }
 #navigation a{
     color: white;
     font-size: 1rem;
