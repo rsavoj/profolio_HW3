@@ -252,11 +252,11 @@ fieldset{
   }
   
   input:checked + .slider {
-    background-color: back;
+    background-color: black;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px black;
+    box-shadow: 0 0 1px #000000;
   }
   
   input:checked + .slider:before {
