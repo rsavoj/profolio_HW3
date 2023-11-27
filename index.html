@@ -300,10 +300,7 @@
             checkBox.addEventListener("change", (event) => {
               
                 if (checkBox.checked == true){
-                    root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
-                    root_acess.style.setProperty( '--headerColorFont', 'black');
-                    root_acess.style.setProperty( '--backgroundColorHeader', 'DarkSlateGrey');
-                    root_acess.style.setProperty( '--lightFontColor', 'RebeccaPurple');
+                    changeToDark()
                 }else{
                     root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
                     root_acess.style.setProperty( '--formActiveColor', '#B2BEB5');
@@ -321,10 +318,16 @@
                 }
         
             });
+            function changeToDark(){
+                root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
+                root_acess.style.setProperty( '--headerColorFont', 'black');
+                root_acess.style.setProperty( '--backgroundColorHeader', 'DarkSlateGrey');
+                root_acess.style.setProperty( '--lightFontColor', 'RebeccaPurple');
+            }
             function paint(){
                 let checkBox = document.getElementById("mode");
                 if (checkBox.checked == true){
-                    root_acess.style.setProperty( '--backgroundColorBody', 'grey');
+                    changeToDark()
                   
                 }
             }
