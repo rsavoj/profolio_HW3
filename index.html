@@ -197,7 +197,7 @@
                     const regex = /[\W\s]/g;
                     const reg = /[\W\s]/g;
                     if (!(reg.test(comments.value))) { 
-                        
+                        console.log(comments.value[comments.value.search(regex)]);
                         comments.setCustomValidity("Please Enter A message with only valid characters");
                         comments.reportValidity();
                         error_comments.textContent = "Error Nonstandard Character"
