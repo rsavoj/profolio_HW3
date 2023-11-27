@@ -389,9 +389,10 @@
                 if(theme.value === "Christmass"){
                     updateChristmassTheme()
                 }
-                if(theme.value === "Custom"){
+                else if(theme.value === "Custom"){
                     paint();
                 }
+                saveToLocalStorage();
             }   
            
             
