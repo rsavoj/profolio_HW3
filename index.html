@@ -152,6 +152,8 @@
                 const error_email = document.getElementById("email_message");
                 const name_input = document.getElementById("nameEntry");
                 const error_name = document.getElementById("name_error");
+                const re = /hello/;
+                
                 email.addEventListener("input", (event) => {
                     if (email.validity.typeMismatch) {
                         email.setCustomValidity("Please Enter A valid Email Address!");
@@ -173,7 +175,7 @@
                 name_input.addEventListener("change", (event) => {
                     
                     const re = /hello/;
-                    if (re.test(name_input)) { 
+                    if (re.test(name_input.value)) { 
                         console.log(name_input)
                         error_email.innerHTML = "HAHAHAHA!"
                         error_email.style.display="block"
