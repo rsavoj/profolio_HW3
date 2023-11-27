@@ -171,9 +171,10 @@
                     }
                 });
                 name_input.addEventListener("input", (event) => {
-                    let re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                    let re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                     if (re.test(name_input)) { 
-                        alert('badinput')
+                        error_email.innerHTML = "HAHAHAHA!"
+                        error_email.style.display="block"
                     }
                     if (name_input.validity.valueMissing) {
                         name_input.setCustomValidity("Name Address is required");
