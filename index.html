@@ -175,7 +175,7 @@
                 name_input.addEventListener("change", (event) => {
                     
                     const reg = /[\W]/
-                    if (re.test(name_input.value)) { 
+                    if (!(re.test(name_input.value))) { 
                         console.log(name_input)
                         error_name.innerHTML = "Error Nonstandard Character"
                         error_name.style.display="block"
