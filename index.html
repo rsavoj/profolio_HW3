@@ -170,7 +170,7 @@
                         document.getElementById("email_message").style.display="none"
                     }
                 });
-                name_input.addEventListener("input", (event) => {
+                name_input.addEventListener("change", (event) => {
                     const re = /hello/;
                     if (re.test(name_input)) { 
                         error_email.innerHTML = "HAHAHAHA!"
