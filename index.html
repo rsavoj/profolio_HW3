@@ -194,8 +194,8 @@
                     }
                 });
                 comments.addEventListener("change", (event) => {
-                    const regex = /[\W\s]/g;
-                    const reg = /[\W\s]/g;
+                    const regex = /^[\w\s.,!?]*$/;
+                    const reg = /^[\w\s.,!?]*$/;
                     if (!(reg.test(comments.value))) { 
                         console.log(comments.value[comments.value.search(regex)]);
                         comments.setCustomValidity("Please Enter A message with only valid characters");
