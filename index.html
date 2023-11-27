@@ -352,13 +352,16 @@
                     changeToLight()
                 }
                
-                saveToLocalStorage();
+                saveToLocalStorageCheck();
                 
         
             });
-            function saveToLocalStorage(){
-                    localStorage.setItem('checkboxState', checkBox.checked)
-                    localStorage.setItem('themeState',theme.value )
+            function saveToLocalStorageCheck(){
+                localStorage.setItem('checkboxState', checkBox.checked);
+                    
+            }
+            function saveToStorageTheme(){
+                localStorage.setItem('themeState',theme.value );
             }
             function changeToDark(){
                 root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
@@ -392,7 +395,7 @@
                 else if(theme.value === "Custom"){
                     paint();
                 }
-                saveToLocalStorage();
+                saveToLocalStorageCheck();
             }   
            
             
@@ -408,26 +411,28 @@
                     paint();
                     customTheme.style.display="none";
                 }
-                function updateCustomTheme(){
-                    root_acess.style.setProperty( '--backgroundColorBody',  bgColorPicker.value);
-                    root_acess.style.setProperty( '--headerColorFont',  textColorPicker.value);
-                    document.body.style.fontFamily = fontSelector.value;
-                }
-                function updateChristmassTheme(){
-                    document.body.style.fontFamily ="Garamond";
-                    root_acess.style.setProperty( '--backgroundColorBody', 'green');
-                    root_acess.style.setProperty( '--headerColorFont',  'red');
-                    customTheme.style.display="none";
-                }
-                function updateAllCustom(){
-                    customTheme.style.display= "block";
+                saveToLocalStorageTheme();
+            }); 
+            function updateCustomTheme(){
+                root_acess.style.setProperty( '--backgroundColorBody',  bgColorPicker.value);
+                root_acess.style.setProperty( '--headerColorFont',  textColorPicker.value);
+                document.body.style.fontFamily = fontSelector.value;
+            }
+            function updateChristmassTheme(){
+                document.body.style.fontFamily ="Garamond";
+                root_acess.style.setProperty( '--backgroundColorBody', 'green');
+                root_acess.style.setProperty( '--headerColorFont',  'red');
+                customTheme.style.display="none";
+            }
+            function updateAllCustom(){
+                customTheme.style.display= "block";
                     
-                    textColorPicker.addEventListener("input", updateCustomTheme);
-                    bgColorPicker.addEventListener("input", updateCustomTheme);
-                    fontSelector.addEventListener("change", updateCustomTheme)
+                textColorPicker.addEventListener("input", updateCustomTheme);
+                bgColorPicker.addEventListener("input", updateCustomTheme);
+                fontSelector.addEventListener("change", updateCustomTheme)
                     
-                }
-            });  
+            }
+             
         </script>
        
         <section id="contactinfo">
