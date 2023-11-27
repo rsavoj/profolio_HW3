@@ -252,11 +252,11 @@ fieldset{
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: back;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px black;
   }
   
   input:checked + .slider:before {
@@ -265,11 +265,4 @@ fieldset{
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+ 
