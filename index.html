@@ -138,7 +138,7 @@
                         
                     </div>
                     <br>
-                   <input type="hidden" name="form_errors">
+                   <input type="hidden" id="form_errors" name="form_errors">
                    <input type="hidden" name="possible_bot" value="true">
 
                     <br>
@@ -263,8 +263,8 @@
                 
                 form.addEventListener("submit", async (e) => {
                     
-                   
-                    let responseData = await postFormFieldsAsJson({url,form_errors});
+                    let form_err = document.getElementById("form_errors")
+                    form_err.setAttribute('value',form_errors)
                     event.preventDefault();
                     console.log(form_errors)
                 });
