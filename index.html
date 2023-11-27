@@ -293,10 +293,10 @@
             
             root_acess.style.setProperty( '--backgroundColorHeader:', 'blue');
             let checkBox = document.getElementById("mode");
-            const savedState= localStorage.getItem('checkboxState')
+            const checkedState= localStorage.getItem('checkboxState')
             
             if(checkedState){
-                    checkBox.checked = JSON.parse(savedState)
+                    checkBox.checked = JSON.parse(checkedState)
             }
             checkBox.addEventListener("change", (event) => {
               
@@ -309,7 +309,7 @@
                     root_acess.style.setProperty( '--headerColorFont:', 'FloralWhite');
                     root_acess.style.setProperty( '--backgroundColorHeader:', 'DarkSlateGrey');
                 }
-                const checkedState = localStorage.getItem('checkboxState');
+               
                 saveToLocalStorage();
                 function saveToLocalStorage(){
                     localStorage.setItem('checkboxState', checkBox.checked)
