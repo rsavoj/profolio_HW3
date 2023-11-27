@@ -240,11 +240,11 @@
                         comments.setCustomValidity("");
                         comments.className = "error";
                         document.getElementById("error_comments")
-                        
+                        error_comments.classList.add('enphasize');
                         if(Number(charsLeft) < 40){
                             error_comments.classList.add('enphasize');
                         }else{
-                            error_comments.classList.remove('enphasize');
+                            
                         }
                         
                     }
