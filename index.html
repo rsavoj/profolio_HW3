@@ -195,7 +195,7 @@
                 });
                 comments.addEventListener("change", (event) => {
                     const regex = /^[\w\s.,!?]*$/;
-                    const reg = /^[\w\s.,!?]*$/;
+                    const reg =  /[^\w\s.!?]/g;
                     if (!(reg.test(comments.value))) { 
                         characterInvalid = comments.value[comments.value.search(regex)];
                         report = "Invalid Character: " + characterInvalid 
