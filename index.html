@@ -303,12 +303,17 @@
               
                 if (checkBox.checked == true){
                     root_acess.style.setProperty( '--backgroundColorBody', 'grey');
-                    root_acess.style.setProperty( '--headerColorFont:', 'FloralWhite');
-                    root_acess.style.setProperty( '--backgroundColorHeader:', 'DarkSlateGrey');
+                    root_acess.style.setProperty( '--headerColorFont', 'FloralWhite');
+                    root_acess.style.setProperty( '--backgroundColorHeader', 'DarkSlateGrey');
                 }else{
+                    root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
+                    root_acess.style.setProperty( '--formActiveColor', '#B2BEB5');
+                    root_acess.style.setProperty( '--backgroundColorHeader', '#B2BEB5');
+                    root_acess.style.setProperty( '--detailsColor', '#b2bdc9');
+                    root_acess.style.setProperty( '--backgroundColorHeaderDark', '#91a195');
                     root_acess.style.setProperty( '--backgroundColorBody', '#DEDEDE');
-                    root_acess.style.setProperty( '--headerColorFont:', 'FloralWhite');
-                    root_acess.style.setProperty( '--backgroundColorHeader:', 'DarkSlateGrey');
+                    root_acess.style.setProperty( '--headerColorFont', '#36454F');
+                
                 }
                
                 saveToLocalStorage();
