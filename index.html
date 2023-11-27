@@ -362,7 +362,7 @@
                     
             }
             function saveToLocalStorageTheme(){
-               // localStorage.setItem('themeState',theme.value );
+                localStorage.setItem('themeState',theme.value );
             }
             function changeToDark(){
                 root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
@@ -394,9 +394,10 @@
                     updateChristmassTheme()
                 }
                 else if(theme.value === "Custom"){
-                    paint();
+                    updateAllCustom();
                 }
                 saveToLocalStorageCheck();
+                saveToLocalStorageTheme();
             }   
            
             
