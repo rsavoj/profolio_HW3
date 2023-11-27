@@ -228,11 +228,14 @@
                         comments.className = "valid";
                         comments.setCustomValidity("");
                         comments.className = "error";
-                        error_comments.style.color="blue"; 
+                        
                         if(Number(charsLeft) < 40){
                             alert("The color should change")
                             error_comments.style.color="red"; 
                            
+                        }
+                        else{
+                            error_comments.style.color="black"; 
                         }
                     }
                 });
