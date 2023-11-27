@@ -22,6 +22,9 @@
     color: red;
     display: none;
 }
+.only_java{
+    display: none;
+}
 
 html {
     width: 100vw; 
