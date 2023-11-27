@@ -155,20 +155,18 @@
                     if (email.validity.typeMismatch) {
                         email.setCustomValidity("Please Enter A valid Email Address!");
                         email.reportValidity();
-                        error_email.innerHTML = "Please Enter A valid Email Address!"
-                        error_email.style.display="block"
+                        error_email.textContent = "Please Enter A valid Email Address!"
                         event.preventDefault();
                     } 
                     else if(email.validity.valueMissing){
                         email.setCustomValidity("Email Address is required");
                         email.reportValidity();
-                        error_email.innerHTML = "Email Address is required!"
-                        error_email.style.display="block"
+                    
                         event.preventDefault();
                     }
                     else {
                         email.setCustomValidity("");
-                        document.getElementById("email_message").style.display="none"
+                    
                     }
                 });
                 name_input.addEventListener("change", (event) => {
