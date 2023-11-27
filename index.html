@@ -117,7 +117,7 @@
                     <br>
                     
                     <input type="text" id="nameEntry"  name="nameEntry" required >
-                    <span class="message" id="error_name" aria-live="polite"></span>
+                    <span class="error" id="error_name" aria-live="polite"></span>
                     
                     <br>
                     <label for="email">Enter Email: </label>
@@ -186,7 +186,8 @@
                         error_name.style.display="block"
                     }
                     else{
-                       
+                        error_name.textContent = "";
+                        error_name.className = "error"
                     }
                 });
                  
