@@ -339,13 +339,14 @@
             
             
             if(checkedState){
-                
+                checkBox.checked =JSON.parse(checkedState)
                 
             }
             if(themeState){
                 theme.value =  JSON.stringify(themeState)
             }
             window.onload = paint;
+            
             checkBox.addEventListener("change", (event) => {
                 if (checkBox.checked == true){
                     changeToDark()
