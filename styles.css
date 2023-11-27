@@ -66,11 +66,14 @@ img {
     justify-content: space-evenly;
     background-color:var(--headerColorFont, black);
 }
+.enphasize{
+    color: red;
+    font-weight: 2rem;
+}
 .translate{
     color: blue;
     animation-name: Appear;
     animation-duration: 4s;
-
 }
 @keyframes Appear {
     from {display: block;}

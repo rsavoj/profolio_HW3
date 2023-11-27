@@ -216,7 +216,7 @@
                         comments.reportValidity();
                         error_comments.classList.add('translate');
                         
-                        
+                      
                         
                         event.preventDefault();
                     }
@@ -242,8 +242,7 @@
                         document.getElementById("error_comments")
                         
                         if(Number(charsLeft) < 40){
-                            error_comments.style.color="red";
-                            error_comments.style.fontSize="2rem" 
+                            error_comments.classList.add('enphasize');
                         }
                         else{
                             
