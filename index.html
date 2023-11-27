@@ -301,7 +301,7 @@
             <select id="theme_selection" name="theme_selection">
                 <option value="Normal">Normal</option>
                 <option value="Custom">Custom</option>
-            <!-- Add more font options as needed -->
+                <option value="Christmass">Christmass</option>
             </select>
             <section id="customTheme" style="display: none;">
                 <br>
@@ -319,6 +319,7 @@
                     <option value="Arial">Arial</option>
                     <option value="Times New Roman">Times New Roman</option>
                 <!-- Add more font options as needed -->
+                <br>
                 </select>
             </section>
         </form>
@@ -389,6 +390,9 @@
                     fontSelector.addEventListener("change", updateCustomTheme)
                     
                 }
+                else if (theme.value === "Christmass"){
+
+                }
                 else{
                     paint()
                     customTheme.style.display="none";
@@ -397,6 +401,11 @@
                     root_acess.style.setProperty( '--backgroundColorBody',  bgColorPicker.value);
                     root_acess.style.setProperty( '--headerColorFont',  textColorPicker.value);
                     document.body.style.fontFamily = fontSelector.value;
+                }
+                function updateChristmassTheme(){
+                    document.body.style.fontFamily ="Garamond";
+                    root_acess.style.setProperty( '--backgroundColorBody', 'green');
+                    root_acess.style.setProperty( '--headerColorFont',  'red');
                 }
             });  
         </script>
