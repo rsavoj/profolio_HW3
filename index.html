@@ -219,7 +219,7 @@
                         comments.setCustomValidity(report);
                         comments.reportValidity();
                         error_comments.classList.add('translate');
-                        error_comments.classList.remove('translate');
+                        
                       
                         
                         event.preventDefault();
@@ -257,6 +257,9 @@
                 mode.addEventListener("change", (event) => {
                     if(mode.checked){
                         lightMode = True;
+                    }
+                    else{
+                        lightMode = False;
                     }
                 });
                 form.addEventListener("input", (event) => {
