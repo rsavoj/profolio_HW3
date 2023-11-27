@@ -9,6 +9,9 @@
     --color1:color-mix(in lch, magenta, maroon);
     ;
 }
+span{
+    color:blue;
+}
 :user-invalid{
     background-color: rgb(234, 149, 149);
 }
