@@ -197,13 +197,14 @@
                     const regex = /^[\w\s.,!?]*$/;
                     const reg =  /[^\w\s.,!?]/g;
                     if (!(regex.test(comments.value))) { 
+                        error_comments.textContent = report
                         error_comments.style.visibility="visible";
                         characterInvalid = comments.value[comments.value.search(reg)];
                         report = "Invalid Character: " + characterInvalid 
                         comments.setCustomValidity(report);
                         comments.reportValidity();
                         
-                        error_comments.textContent = report
+                        
                         
                         event.preventDefault();
                     }
