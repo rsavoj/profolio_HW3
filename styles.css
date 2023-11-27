@@ -14,7 +14,7 @@ span {
     transition-duration: 1s;
     
 }
-span.transformed-state{
+.transformed-state{
     visibility:hidden;
 }
 :user-invalid{
