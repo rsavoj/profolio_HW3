@@ -362,7 +362,7 @@
                     
             }
             function saveToLocalStorageTheme(){
-                localStorage.setItem('themeState', theme.value);
+                localStorage.setItem('themeState', JSON.stringify(theme.value));
             }
             function changeToDark(){
                 root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
