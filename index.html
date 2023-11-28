@@ -342,7 +342,7 @@
                 checkBox.checked =JSON.parse(checkedState) 
             }
             if(themeState){
-                theme.value =  JSON.stringify(themeState)
+                theme.value = JSON.stringify(themeState)
             }
             window.onload = paint;
             
@@ -362,7 +362,7 @@
                     
             }
             function saveToLocalStorageTheme(){
-                localStorage.setItem('themeState',theme.value );
+                localStorage.setItem('themeState', theme.value);
             }
             function changeToDark(){
                 root_acess.style.setProperty( '--backgroundColorBody', 'SlateGrey');
@@ -403,6 +403,7 @@
             
             
             theme.addEventListener("change", (event) => {
+                saveToLocalStorageTheme();
                 if(theme.value === "Custom"){
                     updateAllCustom();
                 }
@@ -414,7 +415,7 @@
                     paint();
                     customTheme.style.display="none";
                 }
-                saveToLocalStorageTheme();
+                
             }); 
             function updateCustomTheme(){
                 root_acess.style.setProperty( '--backgroundColorBody',  bgColorPicker.value);
